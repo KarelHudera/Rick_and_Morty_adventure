@@ -1,6 +1,6 @@
 package karel.hudera.rnma.characters;
 
-public class Character implements ICharacter{
+public class GameCharacter implements ICharacter{
     @Override
     public String speak() {
         return null;

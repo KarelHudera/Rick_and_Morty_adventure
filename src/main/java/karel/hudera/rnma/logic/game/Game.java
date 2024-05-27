@@ -7,6 +7,10 @@ public class Game implements IGame {
     private GamePlan gamePlan;
     private boolean gameOver = false;
 
+    public void setGameOver(boolean gameOver) {
+        this.gameOver = gameOver;
+    }
+
     @Override
     public String getIntro() {
         return null;

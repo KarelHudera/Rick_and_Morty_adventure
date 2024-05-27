@@ -21,7 +21,6 @@ public class Command implements ICommand{
         return this.NAME;
     }
 
-
     public GamePlan getGamePlan() {
         return this.gamePlan;
     }
