@@ -45,8 +45,6 @@ public class GamePlan {
         room1.addItem(item5);
         room1.addItem(item6);
         room1.addItem(bag);
-
-
     }
 
     public String endGame() {

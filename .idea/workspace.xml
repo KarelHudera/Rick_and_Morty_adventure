@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71a00007-78ef-4285-86c8-15b849e74cd9" name="Changes" comment="command Pick + Drop + ShowInventory">
-      <change afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandSearch.java" afterDir="false" />
+    <list default="true" id="71a00007-78ef-4285-86c8-15b849e74cd9" name="Changes" comment="command Search">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/Strings/StringResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/Strings/StringResources.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/characters/GameCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/characters/GameCharacter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandDrop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandDrop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandPick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandPick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/rooms/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/rooms/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/game/GamePlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/game/GamePlan.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +95,7 @@
       <workItem from="1716830501833" duration="9688000" />
       <workItem from="1717158208202" duration="1500000" />
       <workItem from="1717250326782" duration="738000" />
-      <workItem from="1717251077086" duration="28233000" />
+      <workItem from="1717251077086" duration="29595000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -151,7 +145,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717437919023</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="command Search">
+      <option name="closed" value="true" />
+      <created>1717444546638</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1717444546638</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,6 +180,7 @@
     <MESSAGE value="string resources" />
     <MESSAGE value="command Help + EndGame" />
     <MESSAGE value="command Pick + Drop + ShowInventory" />
-    <option name="LAST_COMMIT_MESSAGE" value="command Pick + Drop + ShowInventory" />
+    <MESSAGE value="command Search" />
+    <option name="LAST_COMMIT_MESSAGE" value="command Search" />
   </component>
 </project>
