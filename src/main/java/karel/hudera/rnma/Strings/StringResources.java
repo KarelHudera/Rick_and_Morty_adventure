@@ -12,10 +12,10 @@ public class StringResources {
         public static final String GOTO = "goto";
         public static final String HELP = "help";
         public static final String END_GAME = "endgame";
-        public static final String SHOW_INVENTORY = "showinventory";
+        public static final String SHOW_INVENTORY = "inventory";
         public static final String PICK = "pick";
         public static final String DROP = "drop";
-
+        public static final String SEARCH = "search";
     }
 
     public static class Errors {

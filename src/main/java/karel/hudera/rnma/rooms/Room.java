@@ -59,4 +59,52 @@ public class Room {
     public Item removeItem(String itemName) {
         return items.remove(itemName);
     }
+
+    public String detailedDescription() {
+        return "You are in: " + description + "\n"
+                + entrancesDescription() + "\n"
+                + itemsDescription() + "\n"
+                + charactersDescription();
+    }
+
+    private String entrancesDescription() {
+        if (entrances.isEmpty()) {
+            return "Entrances: None";
+        }
+
+        StringBuilder outputText = new StringBuilder("Entrances: ");
+        for (Room entrance : entrances) {
+            outputText.append(entrance.getName()).append(", ");
+        }
+
+        return outputText.substring(0, outputText.length() - 2);
+    }
+
+    private String itemsDescription() {
+        if (items.isEmpty()) {
+            return "Items: There is nothing";
+        }
+
+        StringBuilder outputText = new StringBuilder("Items: ");
+        for (Map.Entry<String, Item> item : items.entrySet()) {
+            outputText.append(item.getValue().getName()).append(", ");
+        }
+
+        return outputText.substring(0, outputText.length() - 2);
+    }
+
+    private String charactersDescription() {
+        if (characters.isEmpty()) {
+            return "Characters: There are no characters";
+        }
+
+        StringBuilder outputText = new StringBuilder("Characters: ");
+        for (Map.Entry<String, GameCharacter> character : characters.entrySet()) {
+            String name = character.getValue().getName();
+            outputText.append(name.substring(0, 1).toUpperCase())
+                    .append(name.substring(1)).append(", ");
+        }
+
+        return outputText.substring(0, outputText.length() - 2);
+    }
 }
