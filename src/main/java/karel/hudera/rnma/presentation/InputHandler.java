@@ -31,8 +31,7 @@ public class InputHandler {
         return scanner.nextLine();
     }
 
-    private String stripAccents(String s)
-    {
+    private String stripAccents(String s) {
         s = Normalizer.normalize(s, Normalizer.Form.NFD);
         s = s.replaceAll("\\p{InCombiningDiacriticalMarks}", "");
         return s;

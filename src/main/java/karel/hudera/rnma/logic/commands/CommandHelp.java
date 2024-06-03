@@ -2,7 +2,7 @@ package karel.hudera.rnma.logic.commands;
 
 import karel.hudera.rnma.Strings.StringResources;
 
-public class CommandHelp implements ICommand{
+public class CommandHelp implements ICommand {
     private static final String NAME = StringResources.Commands.HELP;
     private CommandsList commandsList;
 

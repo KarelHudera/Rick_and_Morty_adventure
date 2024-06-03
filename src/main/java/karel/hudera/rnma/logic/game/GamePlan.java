@@ -1,6 +1,7 @@
 package karel.hudera.rnma.logic.game;
 
 import karel.hudera.rnma.Strings.StringResources;
+import karel.hudera.rnma.items.Item;
 import karel.hudera.rnma.player.Inventory;
 import karel.hudera.rnma.rooms.Room;
 import java.util.HashMap;
@@ -26,7 +27,26 @@ public class GamePlan {
 
         room1.setEntrance(room2);
         room2.setEntrance(room1);
+
         currentRoom = room1;
+
+        Item item1 = new Item("1", false);
+        Item item2 = new Item("2", true);
+        Item item3 = new Item("3", true);
+        Item item5 = new Item("4", true);
+        Item item6 = new Item("5", true);
+        Item item4 = new Item("6", true);
+        Item bag = new Item("bag", true);
+
+        room1.addItem(item1);
+        room1.addItem(item2);
+        room1.addItem(item3);
+        room1.addItem(item4);
+        room1.addItem(item5);
+        room1.addItem(item6);
+        room1.addItem(bag);
+
+
     }
 
     public String endGame() {
@@ -44,5 +64,9 @@ public class GamePlan {
 
     public Room getRoomByName(String name) {
         return rooms.get(name);
+    }
+
+    public Inventory getInventory() {
+        return this.inventory;
     }
 }

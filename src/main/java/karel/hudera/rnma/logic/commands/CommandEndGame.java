@@ -2,9 +2,8 @@ package karel.hudera.rnma.logic.commands;
 
 import karel.hudera.rnma.Strings.StringResources;
 import karel.hudera.rnma.logic.game.Game;
-import karel.hudera.rnma.logic.game.GamePlan;
 
-public class CommandEndGame extends Command{
+public class CommandEndGame extends Command {
     private Game game;
 
     public CommandEndGame(Game game) {

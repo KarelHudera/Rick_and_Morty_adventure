@@ -4,7 +4,7 @@ import karel.hudera.rnma.Strings.StringResources;
 import karel.hudera.rnma.logic.game.GamePlan;
 import karel.hudera.rnma.rooms.Room;
 
-public class CommandGoTo extends Command{
+public class CommandGoTo extends Command {
     public CommandGoTo(GamePlan gamePlan) {
         super(StringResources.Commands.GOTO, gamePlan);
     }
