@@ -1,5 +1,6 @@
 package karel.hudera.rnma.logic.game;
 
+import karel.hudera.rnma.Strings.StringResources;
 import karel.hudera.rnma.logic.commands.CommandGoTo;
 import karel.hudera.rnma.logic.commands.CommandsList;
 import karel.hudera.rnma.logic.commands.ICommand;
@@ -17,25 +18,12 @@ public class Game implements IGame {
 
     @Override
     public String getIntro() {
-        return """
-                ⠀⠀⠀⠐⣦⣴⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                ⠀⠀⠀⣻⣿⣿⣿⡄⠀⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                ⠀⠀⠈⠹⣯⣿⣿⡃⠀⠀⡿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                ⠀⠀⠀⠀⢀⣹⣟⣡⡤⠴⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                ⠀⠀⣠⡶⠋⢹⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣶⣿⣿⡄⠀⠀⠀
-                ⠀⣼⠃⠀⠀⢀⣿⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣿⣿⣿⣿⡀⠀⠀
-                ⢸⠇⠀⠀⠀⣼⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤⣶⣾⡟⣷⣂⣀⡤⠖
-                ⠿⠊⠲⣶⠿⠛⠫⣶⣧⣀⣀⡀⠀⠀⠀⠀⣠⠞⠁⣴⣿⡿⠁⠀⠀⠀⠀⠀
-                ⠀⠀⠀⠀⠀⠀⢀⡿⠀⠉⠉⣩⡿⠀⠀⠀⠉⠀⣼⣿⡿⠁⠀⠀⠀⠀⠀⠀
-                ⠀⠀⠀⠀⠀⠀⣼⠃⠀⠀⣰⠟⠀⢀⠀⠀⠀⢠⣿⣿⣁⠀⠀⠀⠀⠀⠀⠀
-                ⠀⠀⠀⠀⢀⡼⠃⠀⠀⢴⣅⠀⠀⠉⠘⠲⠴⠟⠁⠈⠙⢷⡀⠀⠀⠀⠀⠀
-                ⠀⠀⠀⣰⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠇⠀⠀⠀⠀⠀
-                ⠀⠀⠰⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠁⠀⠀⠀⠀""";
+        return StringResources.Intro.INTRO_MESSAGE;
     }
 
     @Override
     public String getOutro() {
-        return "Outro";
+        return StringResources.Outro.OUTRO_MESSAGE;
     }
 
     @Override
@@ -43,15 +31,13 @@ public class Game implements IGame {
         String[] commandParts = input.split("[ \t]+");
         String commandName = commandParts[0];
         String[] param = new String[commandParts.length - 1];
-        for (int i = 0; i < param.length; i++) {
-            param[i] = commandParts[i + 1];
-        }
+        System.arraycopy(commandParts, 1, param, 0, param.length);
         String output;
         if (commandsList.isCommandValid(commandName)) {
             ICommand command = commandsList.returnCommand(commandName);
             output = command.makeCommand(param);
         } else {
-            output = "Invalid command";
+            output = StringResources.Errors.INVALID_COMMAND;
         }
         return output;
     }

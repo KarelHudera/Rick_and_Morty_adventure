@@ -1,5 +1,6 @@
 package karel.hudera.rnma.logic.game;
 
+import karel.hudera.rnma.Strings.StringResources;
 import karel.hudera.rnma.player.Inventory;
 import karel.hudera.rnma.rooms.Room;
 import java.util.HashMap;
@@ -30,7 +31,7 @@ public class GamePlan {
 
     public String endGame() {
         game.setGameOver(true);
-        return "Game Over";
+        return StringResources.Outro.GAME_OVER;
     }
 
     public Room getCurrentRoom() {

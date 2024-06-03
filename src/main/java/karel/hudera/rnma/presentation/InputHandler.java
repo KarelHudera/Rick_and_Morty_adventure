@@ -1,5 +1,6 @@
 package karel.hudera.rnma.presentation;
 
+import karel.hudera.rnma.Strings.StringResources;
 import karel.hudera.rnma.logic.game.IGame;
 
 import java.text.Normalizer;
@@ -26,14 +27,14 @@ public class InputHandler {
 
     private String readInput() {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("> ");
+        System.out.print(StringResources.GameOut.OUTPUT_CHARACTER);
         return scanner.nextLine();
     }
 
     private String stripAccents(String s)
     {
         s = Normalizer.normalize(s, Normalizer.Form.NFD);
-        s = s.replaceAll("[\\p{InCombiningDiacriticalMarks}]", "");
+        s = s.replaceAll("\\p{InCombiningDiacriticalMarks}", "");
         return s;
     }
 }
