@@ -6,7 +6,7 @@ import karel.hudera.rnma.rooms.Room;
 
 public class CommandGoTo extends Command{
     public CommandGoTo(GamePlan gamePlan) {
-        super("goto", gamePlan);
+        super(StringResources.Commands.GOTO, gamePlan);
     }
 
     @Override

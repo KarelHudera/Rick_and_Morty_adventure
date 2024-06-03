@@ -8,6 +8,12 @@ public class StringResources {
         public static final String OUTPUT_CHARACTER = "> ";
     }
 
+    public static class Commands {
+        public static final String GOTO = "goto";
+        public static final String HELP = "help";
+        public static final String END_GAME = "endgame";
+    }
+
     public static class Errors {
         public static final String SPECIFY_PARAM = ERROR_PREFIX + "Please specify your parameters.";
         public static final String PARAM_DOESNT_EXIST = ERROR_PREFIX + "That place doesn't exist.";

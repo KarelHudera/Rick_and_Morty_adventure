@@ -1,9 +1,7 @@
 package karel.hudera.rnma.logic.game;
 
 import karel.hudera.rnma.Strings.StringResources;
-import karel.hudera.rnma.logic.commands.CommandGoTo;
-import karel.hudera.rnma.logic.commands.CommandsList;
-import karel.hudera.rnma.logic.commands.ICommand;
+import karel.hudera.rnma.logic.commands.*;
 
 public class Game implements IGame {
     private CommandsList commandsList;
@@ -13,6 +11,8 @@ public class Game implements IGame {
     public Game() {
         gamePlan = new GamePlan(this);
         commandsList = new CommandsList();
+        commandsList.inputCommand(new CommandHelp(commandsList));
+        commandsList.inputCommand(new CommandEndGame(this));
         commandsList.inputCommand(new CommandGoTo(gamePlan));
     }
 
@@ -54,6 +54,6 @@ public class Game implements IGame {
 
     @Override
     public GamePlan getGamePlan() {
-        return null;
+        return gamePlan;
     }
 }
