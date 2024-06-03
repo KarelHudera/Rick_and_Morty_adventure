@@ -15,23 +15,19 @@ public class CommandsList {
     }
 
     public ICommand returnCommand(String command) {
-        if (mappedCommands.containsKey(command)) {
-            return mappedCommands.get(command);
-        } else {
-            return null;
-        }
+        return mappedCommands.getOrDefault(command, null);
     }
 
     public boolean isCommandValid(String command) {
         return mappedCommands.containsKey(command);
     }
 
-    public String returnCommandName() {
-        String list = "";
+    public String returnCommandNames() {
+        StringBuilder list = new StringBuilder();
         for (String name : mappedCommands.keySet()) {
-            list += name + ", ";
+            list.append(name).append(", ");
         }
-        list = list.substring(0, list.length() - 2);
-        return list;
+        list = new StringBuilder(list.substring(0, list.length() - 2));
+        return list.toString();
     }
 }
