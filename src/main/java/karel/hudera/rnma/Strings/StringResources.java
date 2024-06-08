@@ -26,12 +26,18 @@ public class StringResources {
         public static final String EMPTY_INVENTORY = ERROR_PREFIX + "nothing";
         public static final String CANT_BE_PICKED = ERROR_PREFIX + "This can not be picked";
         public static final String FULL_INVENTORY = ERROR_PREFIX + "Your inventory is full";
+        public static final String NONE = ERROR_PREFIX + "None";
     }
 
     public static class Info {
         public static final String WELCOME = "Welcome to the game!";
         public static final String GOOD_LUCK = "Good luck!";
+        public static final String YOU_ARE_IN = "You are in: ";
         public static final String INVENTORY = "Inventory: ";
+        public static final String ITEMS = "Items: ";
+        public static final String CHARACTERS = "Characters: ";
+        public static final String ENTRANCES = "Entrances: ";
+
         public static final String ADDED_TO_INVENTORY = " was added to inventory";
         public static final String REMOVED_FROM_INVENTORY = " was dropped to: ";
     }

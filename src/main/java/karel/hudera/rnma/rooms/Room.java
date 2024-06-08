@@ -1,16 +1,14 @@
 package karel.hudera.rnma.rooms;
 
+import karel.hudera.rnma.Strings.StringResources;
 import karel.hudera.rnma.characters.GameCharacter;
 import karel.hudera.rnma.items.Item;
 
 import java.util.*;
 
 public class Room {
-
     private String name;
-
     private String description;
-
     private Set<Room> entrances;
     private Map<String, Item> items = new HashMap<>();
     private Map<String, GameCharacter> characters = new HashMap<>();
@@ -19,6 +17,25 @@ public class Room {
         this.name = name;
         this.description = description;
         entrances = new HashSet<>();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Room room = (Room) o;
+
+        if (!Objects.equals(name, room.name)) return false;
+        if (!Objects.equals(description, room.description)) return false;
+        if (!Objects.equals(entrances, room.entrances)) return false;
+        if (!Objects.equals(items, room.items)) return false;
+        return Objects.equals(characters, room.characters);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, description, entrances, items, characters);
     }
 
     public String getName() {
@@ -61,7 +78,7 @@ public class Room {
     }
 
     public String detailedDescription() {
-        return "You are in: " + description + "\n"
+        return StringResources.Info.YOU_ARE_IN + description + "\n"
                 + entrancesDescription() + "\n"
                 + itemsDescription() + "\n"
                 + charactersDescription();
@@ -69,10 +86,10 @@ public class Room {
 
     private String entrancesDescription() {
         if (entrances.isEmpty()) {
-            return "Entrances: None";
+            return StringResources.Info.ENTRANCES + StringResources.Errors.NONE;
         }
 
-        StringBuilder outputText = new StringBuilder("Entrances: ");
+        StringBuilder outputText = new StringBuilder(StringResources.Info.ENTRANCES);
         for (Room entrance : entrances) {
             outputText.append(entrance.getName()).append(", ");
         }
@@ -82,10 +99,10 @@ public class Room {
 
     private String itemsDescription() {
         if (items.isEmpty()) {
-            return "Items: There is nothing";
+            return StringResources.Info.ITEMS + StringResources.Errors.NONE;
         }
 
-        StringBuilder outputText = new StringBuilder("Items: ");
+        StringBuilder outputText = new StringBuilder(StringResources.Info.ITEMS);
         for (Map.Entry<String, Item> item : items.entrySet()) {
             outputText.append(item.getValue().getName()).append(", ");
         }
@@ -95,10 +112,10 @@ public class Room {
 
     private String charactersDescription() {
         if (characters.isEmpty()) {
-            return "Characters: There are no characters";
+            return StringResources.Info.CHARACTERS + StringResources.Errors.NONE;
         }
 
-        StringBuilder outputText = new StringBuilder("Characters: ");
+        StringBuilder outputText = new StringBuilder(StringResources.Info.CHARACTERS);
         for (Map.Entry<String, GameCharacter> character : characters.entrySet()) {
             String name = character.getValue().getName();
             outputText.append(name.substring(0, 1).toUpperCase())
