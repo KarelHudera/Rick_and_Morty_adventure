@@ -1,6 +1,8 @@
 package karel.hudera.rnma.logic.game;
 
 import karel.hudera.rnma.Strings.StringResources;
+import karel.hudera.rnma.characters.Alien2;
+import karel.hudera.rnma.characters.GameCharacter;
 import karel.hudera.rnma.items.Item;
 import karel.hudera.rnma.player.Inventory;
 import karel.hudera.rnma.rooms.Room;
@@ -12,7 +14,7 @@ public class GamePlan {
     private Room currentRoom;
     private Inventory inventory = new Inventory();
     private Map<String, Room> rooms = new HashMap<>();
-    private Map<String, Character> characters = new HashMap<>();
+    private Map<String, GameCharacter> characters = new HashMap<>();
 
     public GamePlan(Game game) {
         this.game = game;
@@ -45,6 +47,15 @@ public class GamePlan {
         room1.addItem(item5);
         room1.addItem(item6);
         room1.addItem(bag);
+
+        GameCharacter alien = new GameCharacter("alien", "hello");
+        Alien2 alien2 = new Alien2(this,"alien2", "hello3");
+        room1.addGameCharacter(alien);
+        room1.addGameCharacter(alien2);
+
+        characters.put(alien.getName(), alien);
+        characters.put(alien2.getName(), alien2);
+
     }
 
     public String endGame() {

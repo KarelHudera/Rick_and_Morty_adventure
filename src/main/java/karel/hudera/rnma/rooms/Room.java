@@ -65,12 +65,24 @@ public class Room {
         return items.containsKey(itemName);
     }
 
+    public boolean containsCharacter(String characterName) {
+        return characters.containsKey(characterName);
+    }
+
     public Item getItem(String itemName) {
         return items.get(itemName);
     }
 
+    public GameCharacter getCharacter(String characterName) {
+        return characters.get(characterName);
+    }
+
     public void addItem(Item item) {
         items.put(item.getName(), item);
+    }
+
+    public void addGameCharacter(GameCharacter character) {
+        characters.put(character.getName(), character);
     }
 
     public Item removeItem(String itemName) {
