@@ -35,7 +35,7 @@ public class Room {
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, description, entrances, items, characters);
+        return Objects.hash(name, description, items, characters);
     }
 
     public String getName() {

@@ -2,7 +2,7 @@ package karel.hudera.rnma.Strings;
 
 
 public class StringResources {
-    private static final String ERROR_PREFIX = "\uD83D\uDD34 "; // Red circle emoji for errors
+    public static final String ERROR_PREFIX = "\uD83D\uDD34 "; // Red circle emoji for errors
 
     public static class GameOut {
         public static final String OUTPUT_CHARACTER = "> ";
@@ -16,7 +16,8 @@ public class StringResources {
         public static final String PICK = "pick";
         public static final String DROP = "drop";
         public static final String SEARCH = "search";
-        public static final String TALK_TO= "talkto";
+        public static final String TALK_TO = "talkto";
+        public static final String KILL = "kill";
     }
 
     public static class Errors {
@@ -28,6 +29,10 @@ public class StringResources {
         public static final String CANT_BE_PICKED = ERROR_PREFIX + "This can not be picked";
         public static final String FULL_INVENTORY = ERROR_PREFIX + "Your inventory is full";
         public static final String NONE = ERROR_PREFIX + "None";
+        public static final String CHARACTER_NOT_HERE = " is not here.";
+        public static final String SPECIFY_TALK_TO = ERROR_PREFIX + "You must specify who you want to talk to.";
+        public static final String SPECIFY_LESS_PARAM = ERROR_PREFIX + "Please specify only one parameter";
+        public static final String CHARACTER_IS_DEAD = " is dead";
     }
 
     public static class Info {
@@ -41,6 +46,23 @@ public class StringResources {
 
         public static final String ADDED_TO_INVENTORY = " was added to inventory";
         public static final String REMOVED_FROM_INVENTORY = " was dropped to: ";
+        public static final String KILLED = " was killed";
+    }
+
+    public static class SpeakStrings {
+        public static final String RICK_SPEAK = "ẍ̵̨̦́̉̐͗̈̈́ḑ̴̮̗̟̼͇̲̮̘͌͋͑͛́͆̐͠s̴̤̜̿͑͒̐́ď̷͚͌ś̸̢͉̮̺͈̉̂̽̄̈́̈́͜";
+        public static final String RICK_SPEAK_WEAPON = "Hello Rick";
+        public static final String SUMMER_SPEAK = "Hello Summer";
+        public static final String BETH_SPEAK = "Hello Beth";
+        public static final String JERRY_SPEAK = "Hello Jerry";
+        public static final String NICKY_SPEAK = "Hello Nicky";
+        public static final String FRANKENSTEIN_SPEAK = "Hello Frankenstein";
+        public static final String BUTLER_SPEAK = "Hello Butler";
+        public static final String POOPYBUTTHOLE_SPEAK = "Hello Poopybutthole";
+        public static final String FRIDGE_SPEAK = "Hello Fridge";
+        public static final String PENCILVESTER_SPEAK = "Hello Pencilvester";
+        public static final String RAPTOR_SPEAK = "Hello Raptor";
+        public static final String STEVE_SPEAK = "Hello Steve";
     }
 
     public static class Intro {

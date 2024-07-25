@@ -19,6 +19,7 @@ public class Game implements IGame {
         commandsList.inputCommand(new CommandDrop(gamePlan));
         commandsList.inputCommand(new CommandSearch(gamePlan));
         commandsList.inputCommand(new CommandTalkTo(gamePlan));
+        commandsList.inputCommand(new CommandKill(gamePlan));
     }
 
     @Override

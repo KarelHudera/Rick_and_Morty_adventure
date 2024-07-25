@@ -39,7 +39,7 @@ public class Inventory {
     }
 
     public Boolean isFull() {
-        if (items.containsKey("bag")) return items.size() >= inventorySizeLimit + 3;
+//        if (items.containsKey("bag")) return items.size() >= inventorySizeLimit + 3;
         return items.size() >= inventorySizeLimit;
     }
 }
