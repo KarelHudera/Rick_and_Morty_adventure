@@ -13,7 +13,6 @@ public class Item {
         return this.name;
     }
 
-
     public Boolean getCanBePicked() {
         return this.canBePicked;
     }

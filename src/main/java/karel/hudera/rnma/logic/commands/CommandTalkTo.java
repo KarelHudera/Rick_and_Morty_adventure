@@ -11,10 +11,9 @@ public class CommandTalkTo extends Command {
 
     @Override
     public String makeCommand(String... param) {
-        if (param.length == 0) {
-            return StringResources.Errors.SPECIFY_TALK_TO;
-        } else if (param.length > 1) {
-            return StringResources.Errors.SPECIFY_LESS_PARAM;
+        String validationError = validateParams(param);
+        if (validationError != null) {
+            return validationError;
         }
 
         String characterName = param[0];

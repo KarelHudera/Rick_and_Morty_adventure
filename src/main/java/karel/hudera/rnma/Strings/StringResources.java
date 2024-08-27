@@ -18,6 +18,7 @@ public class StringResources {
         public static final String SEARCH = "search";
         public static final String TALK_TO = "talkto";
         public static final String KILL = "kill";
+        public static final String OPEN = "open";
     }
 
     public static class Errors {
@@ -33,6 +34,7 @@ public class StringResources {
         public static final String SPECIFY_TALK_TO = ERROR_PREFIX + "You must specify who you want to talk to.";
         public static final String SPECIFY_LESS_PARAM = ERROR_PREFIX + "Please specify only one parameter";
         public static final String CHARACTER_IS_DEAD = " is dead";
+        public static final String OPEN_SHIELDS = "You can only open shields";
     }
 
     public static class Info {

@@ -4,20 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71a00007-78ef-4285-86c8-15b849e74cd9" name="Changes" comment="command TalkTo">
-      <change afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/characters/Rick.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandKill.java" afterDir="false" />
+    <list default="true" id="71a00007-78ef-4285-86c8-15b849e74cd9" name="Changes" comment="command Kill">
+      <change afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandOpen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/Strings/StringResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/Strings/StringResources.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/characters/Alien2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/characters/GameCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/characters/GameCharacter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/characters/ICharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/characters/IGameCharacter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/items/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/items/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandDrop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandDrop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandGoTo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandGoTo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandKill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandKill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandPick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandPick.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandTalkTo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandTalkTo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/game/GamePlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/game/GamePlan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/player/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/player/Inventory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/rooms/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/rooms/Room.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +28,7 @@
         <option value="Interface" />
         <option value="Kotlin Class" />
         <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -111,7 +110,9 @@
       <workItem from="1717863922551" duration="2232000" />
       <workItem from="1720104554451" duration="11508000" />
       <workItem from="1721393805502" duration="914000" />
-      <workItem from="1721927341034" duration="2941000" />
+      <workItem from="1721927341034" duration="3697000" />
+      <workItem from="1722265123872" duration="3112000" />
+      <workItem from="1722499086920" duration="636000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -177,7 +178,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719262346108</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="command Kill">
+      <option name="closed" value="true" />
+      <created>1721930734402</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1721930734402</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,6 +215,7 @@
     <MESSAGE value="command Pick + Drop + ShowInventory" />
     <MESSAGE value="command Search" />
     <MESSAGE value="command TalkTo" />
-    <option name="LAST_COMMIT_MESSAGE" value="command TalkTo" />
+    <MESSAGE value="command Kill" />
+    <option name="LAST_COMMIT_MESSAGE" value="command Kill" />
   </component>
 </project>

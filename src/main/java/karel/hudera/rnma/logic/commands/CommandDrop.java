@@ -10,8 +10,9 @@ public class CommandDrop extends Command {
 
     @Override
     public String makeCommand(String... param) {
-        if (param.length == 0) {
-            return StringResources.Errors.SPECIFY_PARAM;
+        String validationError = validateParams(param);
+        if (validationError != null) {
+            return validationError;
         }
 
         String itemName = param[0];
