@@ -28,7 +28,7 @@ public class Command implements ICommand{
 
     protected String validateParams(String... params) {
         if (params.length == 0) {
-            return StringResources.Errors.SPECIFY_TALK_TO;
+            return StringResources.Errors.SPECIFY_MORE_PARAM;
         } else if (params.length > 1) {
             return StringResources.Errors.SPECIFY_LESS_PARAM;
         }

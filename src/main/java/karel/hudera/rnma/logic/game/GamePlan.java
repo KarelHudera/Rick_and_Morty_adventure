@@ -7,8 +7,7 @@ import karel.hudera.rnma.items.Item;
 import karel.hudera.rnma.player.Inventory;
 import karel.hudera.rnma.rooms.Room;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class GamePlan {
     private Game game;
@@ -87,9 +86,35 @@ public class GamePlan {
         living_room.addGameCharacter(raptor);
     }
 
+    public boolean checkCharacterStates(Map<String, GameCharacter> characters) {
+        // Set of characters that should be alive
+        Set<String> shouldBeAlive = new HashSet<>(Arrays.asList("poopybutthole", "jerry", "beth", "summer", "rick"));
+
+        for (GameCharacter character : characters.values()) {
+            if (shouldBeAlive.contains(character.getName())) {
+                // Check if a character that should be alive is actually dead
+                if (!character.isAlive()) {
+                    return false; // Incorrect state
+                }
+            } else {
+                // Check if a character that should be dead is actually alive
+                if (character.isAlive()) {
+                    return false; // Incorrect state
+                }
+            }
+        }
+        return true; // All characters have correct states
+    }
+
     public String endGame() {
         game.setGameOver(true);
-        return StringResources.Outro.GAME_OVER;
+
+        if (checkCharacterStates(characters)) {
+            game.setGameOver(true);
+            return StringResources.Outro.GAME_OVER_WIN;
+        } else {
+            return StringResources.Outro.GAME_OVER_LOS;
+        }
     }
 
     public Room getCurrentRoom() {

@@ -31,7 +31,7 @@ public class StringResources {
         public static final String FULL_INVENTORY = ERROR_PREFIX + "Your inventory is full";
         public static final String NONE = ERROR_PREFIX + "None";
         public static final String CHARACTER_NOT_HERE = " is not here.";
-        public static final String SPECIFY_TALK_TO = ERROR_PREFIX + "You must specify who you want to talk to.";
+        public static final String SPECIFY_MORE_PARAM = ERROR_PREFIX + "You must specify more parameters";
         public static final String SPECIFY_LESS_PARAM = ERROR_PREFIX + "Please specify only one parameter";
         public static final String CHARACTER_IS_DEAD = " is dead";
         public static final String OPEN_SHIELDS = "You can only open shields";
@@ -45,7 +45,7 @@ public class StringResources {
         public static final String ITEMS = "Items: ";
         public static final String CHARACTERS = "Characters: ";
         public static final String ENTRANCES = "Entrances: ";
-
+        public static final String  DEAD_CHARACTERS = "Corpses: ";
         public static final String ADDED_TO_INVENTORY = " was added to inventory";
         public static final String REMOVED_FROM_INVENTORY = " was dropped to: ";
         public static final String KILLED = " was killed";
@@ -74,6 +74,8 @@ public class StringResources {
     public static class Outro {
         public static final String OUTRO_MESSAGE = "Thank you for playing!";
         public static final String GAME_OVER = "Game Over!";
+        public static final String GAME_OVER_WIN = "You won";
+        public static final String GAME_OVER_LOS = "You lose";
     }
 }
 

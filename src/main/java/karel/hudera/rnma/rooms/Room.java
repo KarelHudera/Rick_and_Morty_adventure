@@ -90,10 +90,13 @@ public class Room {
     }
 
     public String detailedDescription() {
-        return StringResources.Info.YOU_ARE_IN + description + "\n"
-                + entrancesDescription() + "\n"
-                + itemsDescription() + "\n"
-                + charactersDescription();
+        return String.format("%s%s\n%s\n%s\n%s\n%s",
+                StringResources.Info.YOU_ARE_IN,
+                description,
+                entrancesDescription(),
+                itemsDescription(),
+                charactersDescription(),
+                deadCharactersDescription());
     }
 
     private String entrancesDescription() {
@@ -123,15 +126,40 @@ public class Room {
     }
 
     private String charactersDescription() {
-        if (characters.isEmpty()) {
-            return StringResources.Info.CHARACTERS + StringResources.Errors.NONE;
+        StringBuilder outputText = new StringBuilder(StringResources.Info.CHARACTERS);
+        boolean hasAliveCharacters = false;
+
+        for (GameCharacter character : characters.values()) {
+            if (character.isAlive()) {
+                hasAliveCharacters = true;
+                String name = character.getName();
+                outputText.append(name.substring(0, 1).toUpperCase())
+                        .append(name.substring(1)).append(", ");
+            }
         }
 
-        StringBuilder outputText = new StringBuilder(StringResources.Info.CHARACTERS);
-        for (Map.Entry<String, GameCharacter> character : characters.entrySet()) {
-            String name = character.getValue().getName();
-            outputText.append(name.substring(0, 1).toUpperCase())
-                    .append(name.substring(1)).append(", ");
+        if (!hasAliveCharacters) {
+            return outputText.append(StringResources.Errors.NONE).toString();
+        }
+
+        return outputText.substring(0, outputText.length() - 2);
+    }
+
+    private String deadCharactersDescription() {
+        StringBuilder outputText = new StringBuilder(StringResources.Info.DEAD_CHARACTERS);
+        boolean hasDeadCharacters = false;
+
+        for (GameCharacter character : characters.values()) {
+            if (!character.isAlive()) {
+                hasDeadCharacters = true;
+                String name = character.getName();
+                outputText.append(name.substring(0, 1).toUpperCase())
+                        .append(name.substring(1)).append(", ");
+            }
+        }
+
+        if (!hasDeadCharacters) {
+            return outputText.append(StringResources.Errors.NONE).toString();
         }
 
         return outputText.substring(0, outputText.length() - 2);
