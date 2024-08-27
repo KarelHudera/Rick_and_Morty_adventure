@@ -1,6 +1,6 @@
 package karel.hudera.rnma.logic.game;
 
-import karel.hudera.rnma.Strings.StringResources;
+import karel.hudera.rnma.strings.StringResources;
 import karel.hudera.rnma.logic.commands.*;
 
 public class Game implements IGame {

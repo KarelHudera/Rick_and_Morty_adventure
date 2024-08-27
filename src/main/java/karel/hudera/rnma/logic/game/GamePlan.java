@@ -1,6 +1,6 @@
 package karel.hudera.rnma.logic.game;
 
-import karel.hudera.rnma.Strings.StringResources;
+import karel.hudera.rnma.strings.StringResources;
 import karel.hudera.rnma.characters.GameCharacter;
 import karel.hudera.rnma.characters.Rick;
 import karel.hudera.rnma.items.Item;
@@ -56,7 +56,7 @@ public class GamePlan {
         GameCharacter poopybutthole = new GameCharacter("244", "poopybutthole", StringResources.SpeakStrings.POOPYBUTTHOLE_SPEAK);
         GameCharacter fridge = new GameCharacter("248", "fridge", StringResources.SpeakStrings.FRIDGE_SPEAK);
         GameCharacter pencilvester = new GameCharacter("259", "pencilvester", StringResources.SpeakStrings.PENCILVESTER_SPEAK);
-        GameCharacter raptor = new GameCharacter("262", "raptor", StringResources.SpeakStrings.RAPTOR_SPEAK);
+        GameCharacter raptor = new GameCharacter("262", "photoraptor", StringResources.SpeakStrings.RAPTOR_SPEAK);
         GameCharacter steve = new GameCharacter("391", "steve", StringResources.SpeakStrings.STEVE_SPEAK);
 
         characters.put(rick.getName(), rick);

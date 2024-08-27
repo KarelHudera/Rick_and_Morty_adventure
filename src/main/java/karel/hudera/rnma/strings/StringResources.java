@@ -1,4 +1,4 @@
-package karel.hudera.rnma.Strings;
+package karel.hudera.rnma.strings;
 
 
 public class StringResources {
@@ -45,26 +45,78 @@ public class StringResources {
         public static final String ITEMS = "Items: ";
         public static final String CHARACTERS = "Characters: ";
         public static final String ENTRANCES = "Entrances: ";
-        public static final String  DEAD_CHARACTERS = "Corpses: ";
+        public static final String DEAD_CHARACTERS = "Corpses: ";
         public static final String ADDED_TO_INVENTORY = " was added to inventory";
         public static final String REMOVED_FROM_INVENTORY = " was dropped to: ";
         public static final String KILLED = " was killed";
     }
 
     public static class SpeakStrings {
-        public static final String RICK_SPEAK = "ẍ̵̨̦́̉̐͗̈̈́ḑ̴̮̗̟̼͇̲̮̘͌͋͑͛́͆̐͠s̴̤̜̿͑͒̐́ď̷͚͌ś̸̢͉̮̺͈̉̂̽̄̈́̈́͜";
-        public static final String RICK_SPEAK_WEAPON = "Hello Rick";
-        public static final String SUMMER_SPEAK = "Hello Summer";
-        public static final String BETH_SPEAK = "Hello Beth";
-        public static final String JERRY_SPEAK = "Hello Jerry";
-        public static final String NICKY_SPEAK = "Hello Nicky";
-        public static final String FRANKENSTEIN_SPEAK = "Hello Frankenstein";
-        public static final String BUTLER_SPEAK = "Hello Butler";
-        public static final String POOPYBUTTHOLE_SPEAK = "Hello Poopybutthole";
-        public static final String FRIDGE_SPEAK = "Hello Fridge";
-        public static final String PENCILVESTER_SPEAK = "Hello Pencilvester";
-        public static final String RAPTOR_SPEAK = "Hello Raptor";
-        public static final String STEVE_SPEAK = "Hello Steve";
+        public static final String RICK_SPEAK = """
+                All right. There's six of us, and that's it.""";
+        public static final String RICK_SPEAK_WEAPON = """
+                I've got about a thousand memories
+                of your dumb, little ass and
+                about six of them are pleasant.
+                The rest
+                is annoying garbage.
+                So why don't you do us both
+                a favor and pull the trigger?
+                Do it!
+                Do it, motherfucker!
+                Pull the fucking trigger!""";
+        public static final String SUMMER_SPEAK = """
+                Why am I always your go-to?
+                **You remember the time when she kicked your balls**""";
+        public static final String BETH_SPEAK = """
+                I'm your mother remember?""";
+        public static final String JERRY_SPEAK = """
+                How do we know I'm real?
+                [ Crying ]
+                I'm a parasite!
+                """;
+        public static final String NICKY_SPEAK = """
+                Remember that we all got stuck in the elevator together.\s
+                And I said: Somebody call for repairs?
+                [ Laughing ]
+                That was fun.\s
+                We really do get into some crazy situations as a family,\s
+                mostly when we're cooped up like this.
+                L-let's get some fresh air.""";
+        public static final String FRANKENSTEIN_SPEAK = """
+                I will admit it's suspicious
+                that Summer's only friend
+                is a magic ballerina lamb
+                that we've never seen.""";
+        public static final String BUTLER_SPEAK = """
+                Do you remember how i saved you in that nazi submarine?
+                Perhaps I'm biased, but if
+                that story never happened,
+                then I wouldn't still be
+                the family butler.""";
+        public static final String POOPYBUTTHOLE_SPEAK = "I'm Mr. Poopybutthole";
+        public static final String FRIDGE_SPEAK = """
+                I-i-i-i everyone has
+                bad memories of me.
+                You remember
+                that one time on roller coaster?
+                [ Screaming ]
+                Ooh, man,
+                we couldn't stop screaming.
+                Beth: Uh, roller coasters aren't bad,
+                Mrs. Refrigerator.
+                They're thrilling.
+                And you've been a perfect
+                companion to me my entire life.""";
+        public static final String PENCILVESTER_SPEAK = """
+                I'm Pencilvester.
+                Listen to that name.
+                You can't kill me.""";
+        public static final String RAPTOR_SPEAK = "Rrrrrrrrrr";
+        public static final String STEVE_SPEAK = """
+                I wanted to thank you for letting me live here all this time, so I'm treating the family to a vacation!
+                others: Thanks, Uncle Steve!
+                Summer: Best Uncle ever.""";
     }
 
     public static class Intro {

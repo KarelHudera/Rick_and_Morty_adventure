@@ -1,6 +1,6 @@
 package karel.hudera.rnma.characters;
 
-import karel.hudera.rnma.Strings.StringResources;
+import karel.hudera.rnma.strings.StringResources;
 import karel.hudera.rnma.logic.game.GamePlan;
 
 public class Rick extends GameCharacter {
