@@ -1,5 +1,6 @@
 package karel.hudera.rnma.characters;
 
-public interface ICharacter {
+public interface IGameCharacter {
     String speak();
+    Boolean isAlive();
 }

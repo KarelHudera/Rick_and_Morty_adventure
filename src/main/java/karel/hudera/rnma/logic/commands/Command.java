@@ -1,5 +1,6 @@
 package karel.hudera.rnma.logic.commands;
 
+import karel.hudera.rnma.Strings.StringResources;
 import karel.hudera.rnma.logic.game.GamePlan;
 
 public class Command implements ICommand{
@@ -21,8 +22,16 @@ public class Command implements ICommand{
         return this.NAME;
     }
 
-
     public GamePlan getGamePlan() {
         return this.gamePlan;
+    }
+
+    protected String validateParams(String... params) {
+        if (params.length == 0) {
+            return StringResources.Errors.SPECIFY_TALK_TO;
+        } else if (params.length > 1) {
+            return StringResources.Errors.SPECIFY_LESS_PARAM;
+        }
+        return null; // No validation error
     }
 }
