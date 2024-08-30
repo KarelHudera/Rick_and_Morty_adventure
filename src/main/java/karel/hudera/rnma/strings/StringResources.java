@@ -1,13 +1,28 @@
 package karel.hudera.rnma.strings;
 
-
+/**
+ * Provides a centralized location for string resources used throughout the game.
+ * This class contains various static constants representing error messages, game instructions,
+ * character dialogues, and other game-related text.
+ *
+ * @author KarelHudera
+ */
 public class StringResources {
+
+    /** Prefix for error messages. */
     public static final String ERROR_PREFIX = "\uD83D\uDD34 "; // Red circle emoji for errors
 
+    /**
+     * Contains strings related to game output and commands.
+     */
     public static class GameOut {
+        /** Prompt character for user input. */
         public static final String OUTPUT_CHARACTER = "> ";
     }
 
+    /**
+     * Contains command keywords used in the game.
+     */
     public static class Commands {
         public static final String GOTO = "goto";
         public static final String HELP = "help";
@@ -21,11 +36,14 @@ public class StringResources {
         public static final String OPEN = "open";
     }
 
+    /**
+     * Contains error messages displayed to the user.
+     */
     public static class Errors {
         public static final String SPECIFY_PARAM = ERROR_PREFIX + "Please specify your parameters.";
         public static final String PARAM_DOESNT_EXIST = ERROR_PREFIX + "That doesn't exist.";
         public static final String CANT_GO_THERE = ERROR_PREFIX + "Can't go there.";
-        public static final String INVALID_COMMAND = ERROR_PREFIX + "Invalid command";
+        public static final String INVALID_COMMAND = ERROR_PREFIX + "Invalid command, try 'help'";
         public static final String EMPTY_INVENTORY = ERROR_PREFIX + "nothing";
         public static final String CANT_BE_PICKED = ERROR_PREFIX + "This can not be picked";
         public static final String FULL_INVENTORY = ERROR_PREFIX + "Your inventory is full";
@@ -35,8 +53,12 @@ public class StringResources {
         public static final String SPECIFY_LESS_PARAM = ERROR_PREFIX + "Please specify only one parameter";
         public static final String CHARACTER_IS_DEAD = " is dead";
         public static final String OPEN_SHIELDS = "You can only open shields";
+        public static final String GET_GUN = "You can't kill without a weapon";
     }
 
+    /**
+     * Contains informational messages for the user.
+     */
     public static class Info {
         public static final String WELCOME = "Welcome to the game!";
         public static final String GOOD_LUCK = "Good luck!";
@@ -51,6 +73,9 @@ public class StringResources {
         public static final String KILLED = " was killed";
     }
 
+    /**
+     * Contains character-specific dialogue strings.
+     */
     public static class SpeakStrings {
         public static final String RICK_SPEAK = """
                 All right. There's six of us, and that's it.""";
@@ -89,7 +114,7 @@ public class StringResources {
                 is a magic ballerina lamb
                 that we've never seen.""";
         public static final String BUTLER_SPEAK = """
-                Do you remember how i saved you in that nazi submarine?
+                Do you remember how I saved you in that Nazi submarine?
                 Perhaps I'm biased, but if
                 that story never happened,
                 then I wouldn't still be
@@ -99,7 +124,7 @@ public class StringResources {
                 I-i-i-i everyone has
                 bad memories of me.
                 You remember
-                that one time on roller coaster?
+                that one time on the roller coaster?
                 [ Screaming ]
                 Ooh, man,
                 we couldn't stop screaming.
@@ -119,10 +144,16 @@ public class StringResources {
                 Summer: Best Uncle ever.""";
     }
 
+    /**
+     * Contains introductory messages for the game.
+     */
     public static class Intro {
         public static final String INTRO_MESSAGE = "Welcome to Rick and Morty adventure";
     }
 
+    /**
+     * Contains outro and game-over messages.
+     */
     public static class Outro {
         public static final String OUTRO_MESSAGE = "Thank you for playing!";
         public static final String GAME_OVER = "Game Over!";

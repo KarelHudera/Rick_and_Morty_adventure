@@ -1,0 +1,99 @@
+Index: src/main/java/karel/hudera/rnma/rooms/Room.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package karel.hudera.rnma.rooms;\n\nimport karel.hudera.rnma.Strings.StringResources;\nimport karel.hudera.rnma.characters.GameCharacter;\nimport karel.hudera.rnma.items.Item;\n\nimport java.util.*;\n\npublic class Room {\n    private String name;\n    private String description;\n    private Set<Room> entrances;\n    private Map<String, Item> items = new HashMap<>();\n    private Map<String, GameCharacter> characters = new HashMap<>();\n\n    public Room(String name, String description) {\n        this.name = name;\n        this.description = description;\n        entrances = new HashSet<>();\n    }\n\n    @Override\n    public boolean equals(Object o) {\n        if (this == o) return true;\n        if (o == null || getClass() != o.getClass()) return false;\n\n        Room room = (Room) o;\n\n        if (!Objects.equals(name, room.name)) return false;\n        if (!Objects.equals(description, room.description)) return false;\n        if (!Objects.equals(entrances, room.entrances)) return false;\n        if (!Objects.equals(items, room.items)) return false;\n        return Objects.equals(characters, room.characters);\n    }\n\n    @Override\n    public int hashCode() {\n        return Objects.hash(name, description, items, characters);\n    }\n\n    public String getName() {\n        return name;\n    }\n\n    public Room getEntranceByName(String name) {\n        return entrances.stream()\n                .filter(room -> room.getName().equals(name))\n                .findFirst()\n                .orElse(null);\n    }\n\n    public Set<Room> getEntrances() {\n        return entrances;\n    }\n\n    public void setEntrance(Room entrance) {\n        entrances.add(entrance);\n    }\n\n    public String getDescription() {\n        return description;\n    }\n\n    public boolean containsItem(String itemName) {\n        return items.containsKey(itemName);\n    }\n\n    public boolean containsCharacter(String characterName) {\n        return characters.containsKey(characterName);\n    }\n\n    public Item getItem(String itemName) {\n        return items.get(itemName);\n    }\n\n    public GameCharacter getCharacter(String characterName) {\n        return characters.get(characterName);\n    }\n\n    public void addItem(Item item) {\n        items.put(item.getName(), item);\n    }\n\n    public void addGameCharacter(GameCharacter character) {\n        characters.put(character.getName(), character);\n    }\n\n    public Item removeItem(String itemName) {\n        return items.remove(itemName);\n    }\n\n    public String detailedDescription() {\n        return StringResources.Info.YOU_ARE_IN + description + \"\\n\"\n                + entrancesDescription() + \"\\n\"\n                + itemsDescription() + \"\\n\"\n                + charactersDescription();\n    }\n\n    private String entrancesDescription() {\n        if (entrances.isEmpty()) {\n            return StringResources.Info.ENTRANCES + StringResources.Errors.NONE;\n        }\n\n        StringBuilder outputText = new StringBuilder(StringResources.Info.ENTRANCES);\n        for (Room entrance : entrances) {\n            outputText.append(entrance.getName()).append(\", \");\n        }\n\n        return outputText.substring(0, outputText.length() - 2);\n    }\n\n    private String itemsDescription() {\n        if (items.isEmpty()) {\n            return StringResources.Info.ITEMS + StringResources.Errors.NONE;\n        }\n\n        StringBuilder outputText = new StringBuilder(StringResources.Info.ITEMS);\n        for (Map.Entry<String, Item> item : items.entrySet()) {\n            outputText.append(item.getValue().getName()).append(\", \");\n        }\n\n        return outputText.substring(0, outputText.length() - 2);\n    }\n\n    private String charactersDescription() {\n        if (characters.isEmpty()) {\n            return StringResources.Info.CHARACTERS + StringResources.Errors.NONE;\n        }\n\n        StringBuilder outputText = new StringBuilder(StringResources.Info.CHARACTERS);\n        for (Map.Entry<String, GameCharacter> character : characters.entrySet()) {\n            String name = character.getValue().getName();\n            outputText.append(name.substring(0, 1).toUpperCase())\n                    .append(name.substring(1)).append(\", \");\n        }\n\n        return outputText.substring(0, outputText.length() - 2);\n    }\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/karel/hudera/rnma/rooms/Room.java b/src/main/java/karel/hudera/rnma/rooms/Room.java
+--- a/src/main/java/karel/hudera/rnma/rooms/Room.java	
++++ b/src/main/java/karel/hudera/rnma/rooms/Room.java	
+@@ -90,10 +90,13 @@
+     }
+ 
+     public String detailedDescription() {
+-        return StringResources.Info.YOU_ARE_IN + description + "\n"
+-                + entrancesDescription() + "\n"
+-                + itemsDescription() + "\n"
+-                + charactersDescription();
++        return String.format("%s%s\n%s\n%s\n%s\n%s",
++                StringResources.Info.YOU_ARE_IN,
++                description,
++                entrancesDescription(),
++                itemsDescription(),
++                charactersDescription(),
++                deadCharactersDescription());
+     }
+ 
+     private String entrancesDescription() {
+@@ -123,16 +126,41 @@
+     }
+ 
+     private String charactersDescription() {
+-        if (characters.isEmpty()) {
+-            return StringResources.Info.CHARACTERS + StringResources.Errors.NONE;
+-        }
+-
+         StringBuilder outputText = new StringBuilder(StringResources.Info.CHARACTERS);
+-        for (Map.Entry<String, GameCharacter> character : characters.entrySet()) {
+-            String name = character.getValue().getName();
+-            outputText.append(name.substring(0, 1).toUpperCase())
+-                    .append(name.substring(1)).append(", ");
++        boolean hasAliveCharacters = false;
++
++        for (GameCharacter character : characters.values()) {
++            if (character.isAlive()) {
++                hasAliveCharacters = true;
++                String name = character.getName();
++                outputText.append(name.substring(0, 1).toUpperCase())
++                        .append(name.substring(1)).append(", ");
++            }
+         }
++
++        if (!hasAliveCharacters) {
++            return outputText.append(StringResources.Errors.NONE).toString();
++        }
++
++        return outputText.substring(0, outputText.length() - 2);
++    }
++
++    private String deadCharactersDescription() {
++        StringBuilder outputText = new StringBuilder(StringResources.Info.DEAD_CHARACTERS);
++        boolean hasDeadCharacters = false;
++
++        for (GameCharacter character : characters.values()) {
++            if (!character.isAlive()) {
++                hasDeadCharacters = true;
++                String name = character.getName();
++                outputText.append(name.substring(0, 1).toUpperCase())
++                        .append(name.substring(1)).append(", ");
++            }
++        }
++
++        if (!hasDeadCharacters) {
++            return outputText.append(StringResources.Errors.NONE).toString();
++        }
+ 
+         return outputText.substring(0, outputText.length() - 2);
+     }
+Index: src/main/java/karel/hudera/rnma/Strings/StringResources.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package karel.hudera.rnma.Strings;\n\n\npublic class StringResources {\n    public static final String ERROR_PREFIX = \"\\uD83D\\uDD34 \"; // Red circle emoji for errors\n\n    public static class GameOut {\n        public static final String OUTPUT_CHARACTER = \"> \";\n    }\n\n    public static class Commands {\n        public static final String GOTO = \"goto\";\n        public static final String HELP = \"help\";\n        public static final String END_GAME = \"endgame\";\n        public static final String SHOW_INVENTORY = \"inventory\";\n        public static final String PICK = \"pick\";\n        public static final String DROP = \"drop\";\n        public static final String SEARCH = \"search\";\n        public static final String TALK_TO = \"talkto\";\n        public static final String KILL = \"kill\";\n        public static final String OPEN = \"open\";\n    }\n\n    public static class Errors {\n        public static final String SPECIFY_PARAM = ERROR_PREFIX + \"Please specify your parameters.\";\n        public static final String PARAM_DOESNT_EXIST = ERROR_PREFIX + \"That doesn't exist.\";\n        public static final String CANT_GO_THERE = ERROR_PREFIX + \"Can't go there.\";\n        public static final String INVALID_COMMAND = ERROR_PREFIX + \"Invalid command\";\n        public static final String EMPTY_INVENTORY = ERROR_PREFIX + \"nothing\";\n        public static final String CANT_BE_PICKED = ERROR_PREFIX + \"This can not be picked\";\n        public static final String FULL_INVENTORY = ERROR_PREFIX + \"Your inventory is full\";\n        public static final String NONE = ERROR_PREFIX + \"None\";\n        public static final String CHARACTER_NOT_HERE = \" is not here.\";\n        public static final String SPECIFY_TALK_TO = ERROR_PREFIX + \"You must specify who you want to talk to.\";\n        public static final String SPECIFY_LESS_PARAM = ERROR_PREFIX + \"Please specify only one parameter\";\n        public static final String CHARACTER_IS_DEAD = \" is dead\";\n        public static final String OPEN_SHIELDS = \"You can only open shields\";\n    }\n\n    public static class Info {\n        public static final String WELCOME = \"Welcome to the game!\";\n        public static final String GOOD_LUCK = \"Good luck!\";\n        public static final String YOU_ARE_IN = \"You are in: \";\n        public static final String INVENTORY = \"Inventory: \";\n        public static final String ITEMS = \"Items: \";\n        public static final String CHARACTERS = \"Characters: \";\n        public static final String ENTRANCES = \"Entrances: \";\n\n        public static final String ADDED_TO_INVENTORY = \" was added to inventory\";\n        public static final String REMOVED_FROM_INVENTORY = \" was dropped to: \";\n        public static final String KILLED = \" was killed\";\n    }\n\n    public static class SpeakStrings {\n        public static final String RICK_SPEAK = \"ẍ̵̨̦́̉̐͗̈̈́ḑ̴̮̗̟̼͇̲̮̘͌͋͑͛́͆̐͠s̴̤̜̿͑͒̐́ď̷͚͌ś̸̢͉̮̺͈̉̂̽̄̈́̈́͜\";\n        public static final String RICK_SPEAK_WEAPON = \"Hello Rick\";\n        public static final String SUMMER_SPEAK = \"Hello Summer\";\n        public static final String BETH_SPEAK = \"Hello Beth\";\n        public static final String JERRY_SPEAK = \"Hello Jerry\";\n        public static final String NICKY_SPEAK = \"Hello Nicky\";\n        public static final String FRANKENSTEIN_SPEAK = \"Hello Frankenstein\";\n        public static final String BUTLER_SPEAK = \"Hello Butler\";\n        public static final String POOPYBUTTHOLE_SPEAK = \"Hello Poopybutthole\";\n        public static final String FRIDGE_SPEAK = \"Hello Fridge\";\n        public static final String PENCILVESTER_SPEAK = \"Hello Pencilvester\";\n        public static final String RAPTOR_SPEAK = \"Hello Raptor\";\n        public static final String STEVE_SPEAK = \"Hello Steve\";\n    }\n\n    public static class Intro {\n        public static final String INTRO_MESSAGE = \"Welcome to Rick and Morty adventure\";\n    }\n\n    public static class Outro {\n        public static final String OUTRO_MESSAGE = \"Thank you for playing!\";\n        public static final String GAME_OVER = \"Game Over!\";\n    }\n}\n\n\n//⠀⠀⠀⠐⣦⣴⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n//⠀⠀⠀⣻⣿⣿⣿⡄⠀⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n//⠀⠀⠈⠹⣯⣿⣿⡃⠀⠀⡿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n//⠀⠀⠀⠀⢀⣹⣟⣡⡤⠴⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n//⠀⠀⣠⡶⠋⢹⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣶⣿⣿⡄⠀⠀⠀\n//⠀⣼⠃⠀⠀⢀⣿⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣿⣿⣿⣿⡀⠀⠀\n//⢸⠇⠀⠀⠀⣼⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤⣶⣾⡟⣷⣂⣀⡤⠖\n//⠿⠊⠲⣶⠿⠛⠫⣶⣧⣀⣀⡀⠀⠀⠀⠀⣠⠞⠁⣴⣿⡿⠁⠀⠀⠀⠀⠀\n//⠀⠀⠀⠀⠀⠀⢀⡿⠀⠉⠉⣩⡿⠀⠀⠀⠉⠀⣼⣿⡿⠁⠀⠀⠀⠀⠀⠀\n//⠀⠀⠀⠀⠀⠀⣼⠃⠀⠀⣰⠟⠀⢀⠀⠀⠀⢠⣿⣿⣁⠀⠀⠀⠀⠀⠀⠀\n//⠀⠀⠀⠀⢀⡼⠃⠀⠀⢴⣅⠀⠀⠉⠘⠲⠴⠟⠁⠈⠙⢷⡀⠀⠀⠀⠀⠀\n//⠀⠀⠀⣰⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠇⠀⠀⠀⠀⠀\n//⠀⠀⠰⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠁⠀⠀⠀⠀
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/karel/hudera/rnma/Strings/StringResources.java b/src/main/java/karel/hudera/rnma/Strings/StringResources.java
+--- a/src/main/java/karel/hudera/rnma/Strings/StringResources.java	
++++ b/src/main/java/karel/hudera/rnma/Strings/StringResources.java	
+@@ -44,8 +44,9 @@
+         public static final String INVENTORY = "Inventory: ";
+         public static final String ITEMS = "Items: ";
+         public static final String CHARACTERS = "Characters: ";
++        public static final String DEAD_CHARACTERS = "Corpses: ";
++
+         public static final String ENTRANCES = "Entrances: ";
+-
+         public static final String ADDED_TO_INVENTORY = " was added to inventory";
+         public static final String REMOVED_FROM_INVENTORY = " was dropped to: ";
+         public static final String KILLED = " was killed";

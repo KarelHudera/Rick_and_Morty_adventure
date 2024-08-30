@@ -4,10 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71a00007-78ef-4285-86c8-15b849e74cd9" name="Changes" comment="game ending logic">
+    <list default="true" id="71a00007-78ef-4285-86c8-15b849e74cd9" name="Changes" comment="strings">
+      <change afterPath="$PROJECT_DIR$/src/test/java/karel/hudera/rnma/characters/GameCharacterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/karel/hudera/rnma/items/ItemTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/karel/hudera/rnma/logic/commands/CommandGoToTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/karel/hudera/rnma/logic/commands/CommandTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/karel/hudera/rnma/logic/game/GamePlanTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/karel/hudera/rnma/logic/game/GameTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/karel/hudera/rnma/player/InventoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/karel/hudera/rnma/presentation/InputHandlerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/karel/hudera/rnma/rooms/RoomTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/Strings/StringResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/strings/StringResources.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/Start.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/characters/GameCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/characters/GameCharacter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/characters/Rick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/characters/Rick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/items/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/items/Item.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/Command.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandDrop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandDrop.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandEndGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandEndGame.java" afterDir="false" />
@@ -19,11 +31,13 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandSearch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandShowInventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandShowInventory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandTalkTo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandTalkTo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandsList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/game/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/game/GamePlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/game/GamePlan.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/player/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/player/Inventory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/InputHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/InputHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/rooms/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/rooms/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/strings/StringResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/strings/StringResources.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,8 +49,9 @@
       <list>
         <option value="Interface" />
         <option value="Kotlin Class" />
-        <option value="Class" />
         <option value="AnnotationType" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -77,9 +92,22 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Start.executor": "Run",
+    "JUnit.CommandGoToTest.executor": "Run",
+    "JUnit.CommandTest.executor": "Run",
+    "JUnit.GameCharacterTest.executor": "Run",
+    "JUnit.GamePlanTest.endGameWin.executor": "Run",
+    "JUnit.GamePlanTest.executor": "Run",
+    "JUnit.GameTest.executor": "Run",
+    "JUnit.InputHandlerTest.executor": "Run",
+    "JUnit.InputHandlerTest.play.executor": "Run",
+    "JUnit.InventoryTest.executor": "Run",
+    "JUnit.ItemTest.executor": "Run",
+    "JUnit.RoomTest.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "develop",
     "jdk.selected.JAVA_MODULE": "21",
     "kotlin-language-version-configured": "true",
@@ -91,8 +119,8 @@
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "/Users/karelhudera/IdeaProjects/Rick_and_Morty_adventure/src/main/java/karel/hudera/rnma/Main.java",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
     "vue.rearranger.settings.migration": "true"
   }
@@ -105,6 +133,103 @@
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/media" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="karel.hudera.rnma.logic.commands" />
+      <recent name="karel.hudera.rnma.characters" />
+      <recent name="karel.hudera.rnma.items" />
+      <recent name="karel.hudera.rnma.logic.game" />
+      <recent name="karel.hudera.rnma.player" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="CommandGoToTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Rick_and_Morty_adventure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="karel.hudera.rnma.logic.commands.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="karel.hudera.rnma.logic.commands" />
+      <option name="MAIN_CLASS_NAME" value="karel.hudera.rnma.logic.commands.CommandGoToTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommandTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Rick_and_Morty_adventure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="karel.hudera.rnma.logic.commands.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="karel.hudera.rnma.logic.commands" />
+      <option name="MAIN_CLASS_NAME" value="karel.hudera.rnma.logic.commands.CommandTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameCharacterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Rick_and_Morty_adventure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="karel.hudera.rnma.characters.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="karel.hudera.rnma.characters" />
+      <option name="MAIN_CLASS_NAME" value="karel.hudera.rnma.characters.GameCharacterTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GamePlanTest.endGameWin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Rick_and_Morty_adventure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="karel.hudera.rnma.logic.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="karel.hudera.rnma.logic.game" />
+      <option name="MAIN_CLASS_NAME" value="karel.hudera.rnma.logic.game.GamePlanTest" />
+      <option name="METHOD_NAME" value="endGameWin" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ItemTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Rick_and_Morty_adventure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="karel.hudera.rnma.items.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="karel.hudera.rnma.items" />
+      <option name="MAIN_CLASS_NAME" value="karel.hudera.rnma.items.ItemTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CommandTest" />
+        <item itemvalue="JUnit.CommandGoToTest" />
+        <item itemvalue="JUnit.GameCharacterTest" />
+        <item itemvalue="JUnit.ItemTest" />
+        <item itemvalue="JUnit.GamePlanTest.endGameWin" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -125,6 +250,7 @@
       <workItem from="1721927341034" duration="3697000" />
       <workItem from="1722265123872" duration="3112000" />
       <workItem from="1722499086920" duration="636000" />
+      <workItem from="1725005059252" duration="6244000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -206,7 +332,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724750461214</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="strings">
+      <option name="closed" value="true" />
+      <created>1724764942262</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1724764942262</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,6 +371,7 @@
     <MESSAGE value="command TalkTo" />
     <MESSAGE value="command Kill" />
     <MESSAGE value="game ending logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="game ending logic" />
+    <MESSAGE value="strings" />
+    <option name="LAST_COMMIT_MESSAGE" value="strings" />
   </component>
 </project>
