@@ -1,15 +1,20 @@
 package karel.hudera.rnma.logic.game;
 
-import karel.hudera.rnma.Strings.StringResources;
+import karel.hudera.rnma.strings.StringResources;
 import karel.hudera.rnma.characters.GameCharacter;
 import karel.hudera.rnma.characters.Rick;
 import karel.hudera.rnma.items.Item;
 import karel.hudera.rnma.player.Inventory;
 import karel.hudera.rnma.rooms.Room;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
+/**
+ * Manages the game's state, including rooms, characters, and inventory.
+ * Responsible for initializing the game setup and providing methods to interact with the game world.
+ *
+ * @author KarelHudera
+ */
 public class GamePlan {
     private Game game;
     private Room currentRoom;
@@ -17,17 +22,27 @@ public class GamePlan {
     private Map<String, Room> rooms = new HashMap<>();
     private Map<String, GameCharacter> characters = new HashMap<>();
 
+    /**
+     * Constructs a new GamePlan instance and initializes the game world.
+     *
+     * @param game the game instance associated with this game plan
+     */
     public GamePlan(Game game) {
         this.game = game;
         initializeGame();
     }
 
+    /**
+     * Initializes the game world, including rooms, items, and characters.
+     */
     private void initializeGame() {
+        // Create rooms
         Room garage = new Room("garage", "garage");
         Room kitchen = new Room("kitchen", "kitchen");
         Room living_room = new Room("living_room", "living room");
         Room dining_room = new Room("dining_room", "dining room");
 
+        // Set up room connections
         rooms.put(garage.getName(), garage);
         rooms.put(kitchen.getName(), kitchen);
         rooms.put(living_room.getName(), living_room);
@@ -42,11 +57,14 @@ public class GamePlan {
         dining_room.setEntrance(kitchen);
         dining_room.setEntrance(living_room);
 
+        // Set the starting room
         currentRoom = dining_room;
 
+        // Add items
         Item weapon = new Item("plasma_blaster", true);
         garage.addItem(weapon);
 
+        // Add characters
         Rick rick = new Rick(this, "rick", StringResources.SpeakStrings.RICK_SPEAK);
         GameCharacter summer = new GameCharacter("3", "summer", StringResources.SpeakStrings.SUMMER_SPEAK);
         GameCharacter beth = new GameCharacter("4", "beth", StringResources.SpeakStrings.BETH_SPEAK);
@@ -57,9 +75,10 @@ public class GamePlan {
         GameCharacter poopybutthole = new GameCharacter("244", "poopybutthole", StringResources.SpeakStrings.POOPYBUTTHOLE_SPEAK);
         GameCharacter fridge = new GameCharacter("248", "fridge", StringResources.SpeakStrings.FRIDGE_SPEAK);
         GameCharacter pencilvester = new GameCharacter("259", "pencilvester", StringResources.SpeakStrings.PENCILVESTER_SPEAK);
-        GameCharacter raptor = new GameCharacter("262", "raptor", StringResources.SpeakStrings.RAPTOR_SPEAK);
+        GameCharacter raptor = new GameCharacter("262", "photoraptor", StringResources.SpeakStrings.RAPTOR_SPEAK);
         GameCharacter steve = new GameCharacter("391", "steve", StringResources.SpeakStrings.STEVE_SPEAK);
 
+        // Add characters to maps
         characters.put(rick.getName(), rick);
         characters.put(summer.getName(), summer);
         characters.put(beth.getName(), beth);
@@ -73,6 +92,7 @@ public class GamePlan {
         characters.put(raptor.getName(), raptor);
         characters.put(steve.getName(), steve);
 
+        // Add characters to rooms
         garage.addGameCharacter(rick);
         dining_room.addGameCharacter(summer);
         dining_room.addGameCharacter(beth);
@@ -87,28 +107,90 @@ public class GamePlan {
         living_room.addGameCharacter(raptor);
     }
 
-    public String endGame() {
-        game.setGameOver(true);
-        return StringResources.Outro.GAME_OVER;
+    /**
+     * Checks if all characters are in their correct states (alive or dead).
+     *
+     * @param characters the map of characters to check
+     * @return true if all characters are in their correct states, false otherwise
+     */
+    public boolean checkCharacterStates(Map<String, GameCharacter> characters) {
+        // Set of characters that should be alive
+        Set<String> shouldBeAlive = new HashSet<>(Arrays.asList("poopybutthole", "jerry", "beth", "summer", "rick"));
+
+        for (GameCharacter character : characters.values()) {
+            if (shouldBeAlive.contains(character.getName())) {
+                // Check if a character that should be alive is actually dead
+                if (!character.isAlive()) {
+                    return false; // Incorrect state
+                }
+            } else {
+                // Check if a character that should be dead is actually alive
+                if (character.isAlive()) {
+                    return false; // Incorrect state
+                }
+            }
+        }
+        return true; // All characters have correct states
     }
 
+    /**
+     * Ends the game and sets the game over status.
+     *
+     * @return the game over message
+     */
+    public String endGame() {
+        game.setGameOver(true);
+
+        if (checkCharacterStates(characters)) {
+            return StringResources.Outro.GAME_OVER_WIN;
+        } else {
+            return StringResources.Outro.GAME_OVER_LOS;
+        }
+    }
+
+    /**
+     * Retrieves the current room.
+     *
+     * @return the current room
+     */
     public Room getCurrentRoom() {
         return currentRoom;
     }
 
+    /**
+     * Sets the current room.
+     *
+     * @param currentRoom the room to set as the current room
+     */
     public void setCurrentRoom(Room currentRoom) {
         this.currentRoom = currentRoom;
     }
 
+    /**
+     * Retrieves a room by its name.
+     *
+     * @param name the name of the room
+     * @return the room with the specified name, or null if not found
+     */
     public Room getRoomByName(String name) {
         return rooms.get(name);
     }
 
+    /**
+     * Retrieves a game character by their name.
+     *
+     * @param name the name of the game character
+     * @return the game character with the specified name, or null if not found
+     */
     public GameCharacter getGameCharacterByName(String name) {
         return characters.get(name);
     }
 
-
+    /**
+     * Retrieves the player's inventory.
+     *
+     * @return the inventory
+     */
     public Inventory getInventory() {
         return this.inventory;
     }
