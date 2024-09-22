@@ -1,7 +1,7 @@
 package karel.hudera.rnma.logic.commands;
 
-import karel.hudera.rnma.strings.StringResources;
 import karel.hudera.rnma.logic.game.GamePlan;
+import karel.hudera.rnma.strings.StringResources;
 
 /**
  * Represents a command in the game logic. Commands are actions that a player can perform.

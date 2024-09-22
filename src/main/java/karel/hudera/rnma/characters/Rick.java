@@ -1,7 +1,7 @@
 package karel.hudera.rnma.characters;
 
-import karel.hudera.rnma.strings.StringResources;
 import karel.hudera.rnma.logic.game.GamePlan;
+import karel.hudera.rnma.strings.StringResources;
 
 /**
  * Represents the character Rick in the game.

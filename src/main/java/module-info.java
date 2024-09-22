@@ -1,0 +1,8 @@
+module karel.hudera.rnma {
+    requires javafx.controls;
+    requires javafx.fxml;
+
+
+    opens karel.hudera.rnma to javafx.fxml;
+    exports karel.hudera.rnma;
+}

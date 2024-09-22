@@ -1,7 +1,7 @@
 package karel.hudera.rnma.logic.commands;
 
-import karel.hudera.rnma.strings.StringResources;
 import karel.hudera.rnma.logic.game.GamePlan;
+import karel.hudera.rnma.strings.StringResources;
 
 import java.util.Objects;
 

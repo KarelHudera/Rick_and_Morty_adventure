@@ -1,7 +1,7 @@
 package karel.hudera.rnma.logic.commands;
 
-import karel.hudera.rnma.strings.StringResources;
 import karel.hudera.rnma.logic.game.Game;
+import karel.hudera.rnma.strings.StringResources;
 
 /**
  * Represents the "end game" command, which allows a player to end the current game session.

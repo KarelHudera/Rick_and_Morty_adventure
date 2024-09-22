@@ -1,8 +1,8 @@
 package karel.hudera.rnma.logic.commands;
 
-import karel.hudera.rnma.strings.StringResources;
 import karel.hudera.rnma.logic.game.GamePlan;
 import karel.hudera.rnma.rooms.Room;
+import karel.hudera.rnma.strings.StringResources;
 
 /**
  * Represents the "go to" command, which allows a player to move from the current room to a specified destination.

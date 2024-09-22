@@ -1,7 +1,7 @@
 package karel.hudera.rnma.logic.commands;
 
-import karel.hudera.rnma.strings.StringResources;
 import karel.hudera.rnma.logic.game.GamePlan;
+import karel.hudera.rnma.strings.StringResources;
 
 /**
  * Represents the "show inventory" command, which displays the current inventory of the player.

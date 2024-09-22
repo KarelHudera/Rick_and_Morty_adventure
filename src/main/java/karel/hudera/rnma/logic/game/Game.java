@@ -1,7 +1,7 @@
 package karel.hudera.rnma.logic.game;
 
-import karel.hudera.rnma.strings.StringResources;
 import karel.hudera.rnma.logic.commands.*;
+import karel.hudera.rnma.strings.StringResources;
 
 /**
  * Represents the main game logic, managing commands, game state, and interactions.

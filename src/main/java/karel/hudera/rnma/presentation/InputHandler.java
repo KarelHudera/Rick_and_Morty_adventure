@@ -1,7 +1,7 @@
 package karel.hudera.rnma.presentation;
 
-import karel.hudera.rnma.strings.StringResources;
 import karel.hudera.rnma.logic.game.IGame;
+import karel.hudera.rnma.strings.StringResources;
 
 import java.text.Normalizer;
 import java.util.Scanner;

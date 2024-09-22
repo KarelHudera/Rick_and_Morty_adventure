@@ -1,7 +1,7 @@
 package karel.hudera.rnma.player;
 
-import karel.hudera.rnma.strings.StringResources;
 import karel.hudera.rnma.items.Item;
+import karel.hudera.rnma.strings.StringResources;
 
 import java.util.HashMap;
 import java.util.Map;

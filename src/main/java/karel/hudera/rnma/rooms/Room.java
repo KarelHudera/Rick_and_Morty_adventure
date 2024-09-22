@@ -1,8 +1,8 @@
 package karel.hudera.rnma.rooms;
 
-import karel.hudera.rnma.strings.StringResources;
 import karel.hudera.rnma.characters.GameCharacter;
 import karel.hudera.rnma.items.Item;
+import karel.hudera.rnma.strings.StringResources;
 
 import java.util.*;
 

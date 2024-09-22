@@ -1,11 +1,11 @@
 package karel.hudera.rnma.logic.game;
 
-import karel.hudera.rnma.strings.StringResources;
 import karel.hudera.rnma.characters.GameCharacter;
 import karel.hudera.rnma.characters.Rick;
 import karel.hudera.rnma.items.Item;
 import karel.hudera.rnma.player.Inventory;
 import karel.hudera.rnma.rooms.Room;
+import karel.hudera.rnma.strings.StringResources;
 
 import java.util.*;
 

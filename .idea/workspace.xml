@@ -4,369 +4,131 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71a00007-78ef-4285-86c8-15b849e74cd9" name="Changes" comment="Test">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="278f4ff0-6cdb-4104-8981-9e166351518e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/HelloApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Rick_and_Morty_adventure_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rick_and_Morty_adventure.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rick_and_Morty_adventure.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backup/Rick_and_Morty_adventure.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/characters/Rick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/characters/Rick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandDrop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandDrop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandEndGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandEndGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandGoTo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandGoTo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandKill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandKill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandOpen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandOpen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandPick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandPick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandShowInventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandShowInventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandTalkTo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandTalkTo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/game/GamePlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/game/GamePlan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/player/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/player/Inventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/InputHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/InputHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/rooms/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/rooms/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Kotlin Class" />
-        <option value="AnnotationType" />
-        <option value="Class" />
-        <option value="JUnit5 Test Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;KarelHudera&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="98b1d279-8f58-4240-b7d3-11706faa36a4" />
-        <option name="url" value="https://github.com/KarelHudera/Rick_and_Morty_adventure.git" />
-      </UrlAndAccount>
-    </option>
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 5
-}</component>
-  <component name="ProjectId" id="2h3FEUUQyr4oTRiXsj7VWznAWhf" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2mQyL6umJ72Zps2uvW8Uirfce3m" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.HelloApplication.executor": "Run",
     "Application.Start.executor": "Run",
-    "JUnit.CommandGoToTest.executor": "Run",
-    "JUnit.CommandTest.executor": "Run",
-    "JUnit.GameCharacterTest.executor": "Run",
-    "JUnit.GamePlanTest.endGameWin.executor": "Run",
-    "JUnit.GamePlanTest.executor": "Run",
-    "JUnit.GameTest.executor": "Run",
-    "JUnit.InputHandlerTest.executor": "Run",
-    "JUnit.InputHandlerTest.play.executor": "Run",
-    "JUnit.InventoryTest.executor": "Run",
-    "JUnit.ItemTest.executor": "Run",
-    "JUnit.RoomTest.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "develop",
-    "jdk.selected.JAVA_MODULE": "21",
+    "git-widget-placeholder": "gui-setup",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/karelhudera/IdeaProjects/Rick_and_Morty_adventure/src/main/resources",
+    "last_opened_file_path": "/Users/karelhudera/IdeaProjects/Rick_and_Morty_adventure/src",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "/Users/karelhudera/IdeaProjects/Rick_and_Morty_adventure/src/main/java/karel/hudera/rnma/Main.java",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/main/java/karel/hudera/rnma" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src/media" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="karel.hudera.rnma.logic.commands" />
-      <recent name="karel.hudera.rnma.characters" />
-      <recent name="karel.hudera.rnma.items" />
-      <recent name="karel.hudera.rnma.logic.game" />
-      <recent name="karel.hudera.rnma.player" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="CommandGoToTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Start" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="karel.hudera.rnma.Start" />
       <module name="Rick_and_Morty_adventure" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="karel.hudera.rnma.logic.commands.*" />
+          <option name="PATTERN" value="karel.hudera.rnma.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="karel.hudera.rnma.logic.commands" />
-      <option name="MAIN_CLASS_NAME" value="karel.hudera.rnma.logic.commands.CommandGoToTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CommandTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Rick_and_Morty_adventure" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="karel.hudera.rnma.logic.commands.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="karel.hudera.rnma.logic.commands" />
-      <option name="MAIN_CLASS_NAME" value="karel.hudera.rnma.logic.commands.CommandTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GameCharacterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Rick_and_Morty_adventure" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="karel.hudera.rnma.characters.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="karel.hudera.rnma.characters" />
-      <option name="MAIN_CLASS_NAME" value="karel.hudera.rnma.characters.GameCharacterTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GamePlanTest.endGameWin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Rick_and_Morty_adventure" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="karel.hudera.rnma.logic.game.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="karel.hudera.rnma.logic.game" />
-      <option name="MAIN_CLASS_NAME" value="karel.hudera.rnma.logic.game.GamePlanTest" />
-      <option name="METHOD_NAME" value="endGameWin" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ItemTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Rick_and_Morty_adventure" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="karel.hudera.rnma.items.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="karel.hudera.rnma.items" />
-      <option name="MAIN_CLASS_NAME" value="karel.hudera.rnma.items.ItemTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CommandTest" />
-        <item itemvalue="JUnit.CommandGoToTest" />
-        <item itemvalue="JUnit.GameCharacterTest" />
-        <item itemvalue="JUnit.ItemTest" />
-        <item itemvalue="JUnit.GamePlanTest.endGameWin" />
+        <item itemvalue="Application.Start" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="71a00007-78ef-4285-86c8-15b849e74cd9" name="Changes" comment="" />
-      <created>1716814745297</created>
+      <changelist id="278f4ff0-6cdb-4104-8981-9e166351518e" name="Changes" comment="" />
+      <created>1727023036913</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1716814745297</updated>
-      <workItem from="1716814746417" duration="986000" />
-      <workItem from="1716830501833" duration="9688000" />
-      <workItem from="1717158208202" duration="1500000" />
-      <workItem from="1717250326782" duration="738000" />
-      <workItem from="1717251077086" duration="29595000" />
-      <workItem from="1717863922551" duration="2232000" />
-      <workItem from="1720104554451" duration="11508000" />
-      <workItem from="1721393805502" duration="914000" />
-      <workItem from="1721927341034" duration="3697000" />
-      <workItem from="1722265123872" duration="3112000" />
-      <workItem from="1722499086920" duration="636000" />
-      <workItem from="1725005059252" duration="7166000" />
+      <updated>1727023036913</updated>
+      <workItem from="1727023038453" duration="2532000" />
     </task>
-    <task id="LOCAL-00001" summary="Initial commit">
-      <option name="closed" value="true" />
-      <created>1716834072137</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1716834072137</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Setup">
-      <option name="closed" value="true" />
-      <created>1716841650825</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1716841650825</updated>
-    </task>
-    <task id="LOCAL-00003" summary="command GoTo">
-      <option name="closed" value="true" />
-      <created>1717407882861</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1717407882861</updated>
-    </task>
-    <task id="LOCAL-00004" summary="string resources">
-      <option name="closed" value="true" />
-      <created>1717410327859</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1717410327859</updated>
-    </task>
-    <task id="LOCAL-00005" summary="command Help + EndGame">
-      <option name="closed" value="true" />
-      <created>1717430241243</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1717430241243</updated>
-    </task>
-    <task id="LOCAL-00006" summary="command Pick + Drop + ShowInventory">
-      <option name="closed" value="true" />
-      <created>1717437919023</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1717437919023</updated>
-    </task>
-    <task id="LOCAL-00007" summary="command Search">
-      <option name="closed" value="true" />
-      <created>1717444546638</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1717444546638</updated>
-    </task>
-    <task id="LOCAL-00008" summary="command TalkTo">
-      <option name="closed" value="true" />
-      <created>1719262346108</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1719262346108</updated>
-    </task>
-    <task id="LOCAL-00009" summary="command Kill">
-      <option name="closed" value="true" />
-      <created>1721930734402</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1721930734402</updated>
-    </task>
-    <task id="LOCAL-00010" summary="game ending logic">
-      <option name="closed" value="true" />
-      <created>1724750461214</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1724750461214</updated>
-    </task>
-    <task id="LOCAL-00011" summary="strings">
-      <option name="closed" value="true" />
-      <created>1724764942262</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1724764942262</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Test">
-      <option name="closed" value="true" />
-      <created>1725012795128</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1725012795128</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Test">
-      <option name="closed" value="true" />
-      <created>1725012875679</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1725012875679</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Test">
-      <option name="closed" value="true" />
-      <created>1725012898630</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1725012898630</updated>
-    </task>
-    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <ignored-roots>
-      <path value="$PROJECT_DIR$" />
-    </ignored-roots>
-    <MESSAGE value="Initial commit" />
-    <MESSAGE value="Setup" />
-    <MESSAGE value="command GoTo" />
-    <MESSAGE value="string resources" />
-    <MESSAGE value="command Help + EndGame" />
-    <MESSAGE value="command Pick + Drop + ShowInventory" />
-    <MESSAGE value="command Search" />
-    <MESSAGE value="command TalkTo" />
-    <MESSAGE value="command Kill" />
-    <MESSAGE value="game ending logic" />
-    <MESSAGE value="strings" />
-    <MESSAGE value="Test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test" />
   </component>
 </project>

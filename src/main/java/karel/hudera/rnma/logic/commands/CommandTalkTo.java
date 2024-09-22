@@ -1,8 +1,8 @@
 package karel.hudera.rnma.logic.commands;
 
-import karel.hudera.rnma.strings.StringResources;
-import karel.hudera.rnma.logic.game.GamePlan;
 import karel.hudera.rnma.characters.GameCharacter;
+import karel.hudera.rnma.logic.game.GamePlan;
+import karel.hudera.rnma.strings.StringResources;
 
 /**
  * Represents the "talk to" command, which allows the player to talk to a character in the current room.
