@@ -4,50 +4,49 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="278f4ff0-6cdb-4104-8981-9e166351518e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/HelloApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/hello-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Rick_and_Morty_adventure_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+    <list default="true" id="57f78e88-8e8e-4551-a47b-785d14a6f306" name="Changes" comment="refactor: new project structure -&gt; logic and presentation separation">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/MainApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/controllers/DiningRoomViewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/controllers/GarageViewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/controllers/KitchenViewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/controllers/LivingRoomViewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/controllers/StageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/controllers/StageControllerAware.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/controllers/StartViewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/dining-room-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/garage-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/kitchen-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/living-room-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/start-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rick_and_Morty_adventure.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backup/Rick_and_Morty_adventure.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/characters/Rick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/characters/Rick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandDrop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandDrop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandEndGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandEndGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandGoTo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandGoTo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandKill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandKill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandOpen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandOpen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandPick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandPick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandShowInventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandShowInventory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandTalkTo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/commands/CommandTalkTo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/game/GamePlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/game/GamePlan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/player/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/player/Inventory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/InputHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/InputHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/rooms/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/rooms/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/HelloApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/Start.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/hello-view.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="FxmlFile" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="develop" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -55,18 +54,11 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 5
-}]]></component>
-  <component name="ProjectId" id="2mQyL6umJ72Zps2uvW8Uirfce3m" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2nCm43jPEYXbD5eDfXCbtbh1e7H" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -74,61 +66,81 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.HelloApplication.executor": "Run",
+    "Application.MainApplication.executor": "Run",
     "Application.Start.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "gui-setup",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/karelhudera/IdeaProjects/Rick_and_Morty_adventure/src",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/main/java/karel/hudera/rnma" />
-      <recent name="$PROJECT_DIR$" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="karel.hudera.rnma.presentation.controllers" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="karel.hudera.rnma.presentation" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="Start" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="karel.hudera.rnma.Start" />
-      <module name="Rick_and_Morty_adventure" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="karel.hudera.rnma.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Start" />
-      </list>
-    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="278f4ff0-6cdb-4104-8981-9e166351518e" name="Changes" comment="" />
-      <created>1727023036913</created>
+      <changelist id="57f78e88-8e8e-4551-a47b-785d14a6f306" name="Changes" comment="" />
+      <created>1728485237816</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1727023036913</updated>
-      <workItem from="1727023038453" duration="2532000" />
+      <updated>1728485237816</updated>
+      <workItem from="1728485239999" duration="2569000" />
+      <workItem from="1728487865843" duration="12277000" />
     </task>
+    <task id="LOCAL-00001" summary="chore: jdk-23">
+      <option name="closed" value="true" />
+      <created>1728502609717</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1728502609717</updated>
+    </task>
+    <task id="LOCAL-00002" summary="refactor: new project structure -&gt; logic and presentation separation">
+      <option name="closed" value="true" />
+      <created>1728502834506</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1728502834506</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="chore: jdk-23" />
+    <MESSAGE value="refactor: new project structure -&gt; logic and presentation separation" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: new project structure -&gt; logic and presentation separation" />
   </component>
 </project>
