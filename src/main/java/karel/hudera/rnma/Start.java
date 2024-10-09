@@ -1,7 +1,7 @@
 package karel.hudera.rnma;
 
-import karel.hudera.rnma.logic.game.Game;
-import karel.hudera.rnma.presentation.InputHandler;
+import karel.hudera.rnma.logic.mechanic.game.Game;
+import karel.hudera.rnma.logic.mechanic.InputHandler;
 
 /**
  * The entry point of the game.
