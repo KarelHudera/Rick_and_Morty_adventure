@@ -1,8 +1,9 @@
 package karel.hudera.rnma.rooms;
 
-import karel.hudera.rnma.characters.GameCharacter;
-import karel.hudera.rnma.items.Item;
-import karel.hudera.rnma.strings.StringResources;
+import karel.hudera.rnma.logic.characters.GameCharacter;
+import karel.hudera.rnma.logic.items.Item;
+import karel.hudera.rnma.logic.rooms.Room;
+import karel.hudera.rnma.logic.strings.StringResources;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

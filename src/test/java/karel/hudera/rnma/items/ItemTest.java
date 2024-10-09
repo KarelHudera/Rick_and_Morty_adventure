@@ -1,5 +1,6 @@
 package karel.hudera.rnma.items;
 
+import karel.hudera.rnma.logic.items.Item;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
