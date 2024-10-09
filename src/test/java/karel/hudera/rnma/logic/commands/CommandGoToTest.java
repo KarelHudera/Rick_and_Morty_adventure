@@ -1,9 +1,10 @@
 package karel.hudera.rnma.logic.commands;
 
-import karel.hudera.rnma.logic.game.Game;
-import karel.hudera.rnma.logic.game.GamePlan;
-import karel.hudera.rnma.rooms.Room;
-import karel.hudera.rnma.strings.StringResources;
+import karel.hudera.rnma.logic.mechanic.commands.CommandGoTo;
+import karel.hudera.rnma.logic.mechanic.game.Game;
+import karel.hudera.rnma.logic.mechanic.game.GamePlan;
+import karel.hudera.rnma.logic.rooms.Room;
+import karel.hudera.rnma.logic.strings.StringResources;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
