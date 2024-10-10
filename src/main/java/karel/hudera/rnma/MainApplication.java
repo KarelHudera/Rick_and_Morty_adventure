@@ -1,15 +1,18 @@
 package karel.hudera.rnma;
 
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.Pane;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.VBox;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 import karel.hudera.rnma.logic.mechanic.InputHandler;
 import karel.hudera.rnma.logic.mechanic.game.Game;
 import karel.hudera.rnma.presentation.controllers.StageController;
-import karel.hudera.rnma.presentation.controllers.StageControllerAware;
+import karel.hudera.rnma.presentation.ui.MainUI;
 
 import java.io.IOException;
 
@@ -30,11 +33,8 @@ import java.io.IOException;
  */
 public class MainApplication extends Application {
 
-    // Controller for managing different scenes in the JavaFX stage.
-    private StageController stageController;
-    double screenWidth = Screen.getPrimary().getBounds().getWidth();
-    double screenHeight = Screen.getPrimary().getBounds().getHeight();
-
+    private static final double screenWidth = Screen.getPrimary().getBounds().getWidth();
+    private static final double screenHeight = Screen.getPrimary().getBounds().getHeight();
     /**
      * The main method of the application.
      * Based on the command-line arguments, it launches the appropriate mode of the game.
@@ -77,7 +77,7 @@ public class MainApplication extends Application {
      * Launches the JavaFX GUI version of the game by invoking the {@link #launch()} method.
      */
     private static void launchJavaFXApp() {
-        launch();
+        Application.launch();
     }
 
     /**
@@ -99,92 +99,10 @@ public class MainApplication extends Application {
         // botStart();
     }
 
-    /**
-     * The entry point for JavaFX applications. This method is called after {@link #launch()} is invoked.
-     * It sets up the JavaFX stage and initializes the views.
-     *
-     * @param stage The primary stage for the JavaFX application.
-     * @throws IOException If loading the FXML files fails.
-     */
+
     @Override
-    public void start(Stage stage) throws IOException {
-
-
-        stageController = new StageController(stage);
-
-        // Load all views and set the initial view to the "start" scene.
-        loadViews(screenWidth, screenHeight);
-        stageController.activate("start");
-
-        // Configure the primary stage properties such as title and fullscreen.
-        setupPrimaryStage(stage);
-    }
-
-    /**
-     * Loads all the FXML views required by the application and registers them with the {@link StageController}.
-     *
-     * @throws IOException If any of the FXML files fail to load.
-     */
-    private void loadViews(double width, double height) throws IOException {
-        loadView("start-view.fxml", "start");
-        loadView("kitchen-view.fxml", "kitchen");
-        loadView("dining-room-view.fxml", "dining_room");
-        loadView("garage-view.fxml", "garage");
-        loadView("living-room-view.fxml", "living_room");
-    }
-
-    /**
-     * Loads an individual FXML view, registers it with the {@link StageController}, and configures the controller if necessary.
-     *
-     * @param fxmlFile   The path to the FXML file for the view.
-     * @param screenName The name by which this view is identified in the {@link StageController}.
-     * @throws IOException If the FXML file fails to load.
-     */
-    private void loadView(String fxmlFile, String screenName) throws IOException {
-        FXMLLoader loader = new FXMLLoader(MainApplication.class.getResource(fxmlFile));
-        Parent view = loader.load();
-
-        // Set the StageController on the controller if it implements StageControllerAware.
-        configureController(loader);
-
-        // Register the view with the StageController.
-        registerView(screenName, view);
-    }
-
-    /**
-     * Configures the controller by passing the {@link StageController} if the controller implements {@link StageControllerAware}.
-     *
-     * @param loader The {@link FXMLLoader} that has loaded the FXML file.
-     */
-    private void configureController(FXMLLoader loader) {
-        Object controller = loader.getController();
-        if (controller instanceof StageControllerAware) {
-            ((StageControllerAware) controller).setScreenController(stageController);
-            ((StageControllerAware) controller).setScreenDimensions(screenWidth, screenHeight);
-            System.out.println("Screen Width1: " + screenWidth);
-            System.out.println("Screen Height1: " + screenHeight);
-        }
-    }
-
-    /**
-     * Registers the loaded view (scene) with the {@link StageController}.
-     *
-     * @param screenName The name used to identify the screen.
-     * @param view       The root node of the view.
-     */
-    private void registerView(String screenName, Parent view) {
-        Scene scene = new Scene(view);
-        stageController.addScreen(screenName, scene);
-    }
-
-    /**
-     * Configures the primary stage properties such as the title and fullscreen mode.
-     *
-     * @param stage The main stage of the JavaFX application.
-     */
-    private void setupPrimaryStage(Stage stage) {
-        stage.setTitle("Rick and Morty Adventure");
-        stage.setFullScreen(true);
-        stage.show();
+    public void start(Stage primaryStage) throws Exception {
+        MainUI mainUI = new MainUI();
+        mainUI.launchUI(primaryStage, screenWidth, screenHeight);
     }
 }

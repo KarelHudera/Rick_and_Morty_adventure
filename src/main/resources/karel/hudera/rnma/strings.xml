@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<resources>
-    <string name="garage">Garage</string>
-    <string name="kitchen">Kitchen</string>
-    <string name="living_room">Living Room</string>
-    <string name="dining_room">Dining Room</string>
-    <string name="start">Start</string>
-</resources>
