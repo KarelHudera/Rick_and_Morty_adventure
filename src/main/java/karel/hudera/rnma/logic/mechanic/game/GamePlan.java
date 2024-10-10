@@ -71,10 +71,10 @@ public class GamePlan {
         GameCharacter jerry = new GameCharacter("5", "jerry", StringResources.SpeakStrings.JERRY_SPEAK);
         GameCharacter nicky = new GameCharacter("76", "nicky", StringResources.SpeakStrings.NICKY_SPEAK);
         GameCharacter frankenstein = new GameCharacter("128", "frankenstein", StringResources.SpeakStrings.FRANKENSTEIN_SPEAK);
-        GameCharacter butler = new GameCharacter("236", "butler", StringResources.SpeakStrings.BUTLER_SPEAK);
+        GameCharacter butler = new GameCharacter("236", "beauregard", StringResources.SpeakStrings.BUTLER_SPEAK);
         GameCharacter poopybutthole = new GameCharacter("244", "poopybutthole", StringResources.SpeakStrings.POOPYBUTTHOLE_SPEAK);
-        GameCharacter fridge = new GameCharacter("248", "fridge", StringResources.SpeakStrings.FRIDGE_SPEAK);
-        GameCharacter pencilvester = new GameCharacter("259", "pencilvester", StringResources.SpeakStrings.PENCILVESTER_SPEAK);
+        GameCharacter fridge = new GameCharacter("248", "refridgerator", StringResources.SpeakStrings.FRIDGE_SPEAK);
+        GameCharacter pencilvester = new GameCharacter("259", "pensylvester", StringResources.SpeakStrings.PENCILVESTER_SPEAK);
         GameCharacter raptor = new GameCharacter("262", "photoraptor", StringResources.SpeakStrings.RAPTOR_SPEAK);
         GameCharacter steve = new GameCharacter("391", "steve", StringResources.SpeakStrings.STEVE_SPEAK);
 
