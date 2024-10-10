@@ -10,6 +10,14 @@ public class GarageViewController implements StageControllerAware {
         this.stageController = stageController;
     }
 
+    double screenHeight;
+    double screenWidth;
+    @Override
+    public void setScreenDimensions(double width, double height) {
+        this.screenWidth = width;
+        this.screenHeight = height;
+    }
+
     @FXML
     protected void onBackButtonClick() {
         System.out.println("Back button clicked"); // Debugging line

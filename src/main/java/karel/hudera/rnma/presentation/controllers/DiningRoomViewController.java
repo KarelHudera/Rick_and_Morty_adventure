@@ -14,4 +14,12 @@ public class DiningRoomViewController implements StageControllerAware {
     protected void onBackButtonClick() {
         stageController.activate("start"); // Go back to the first page
     }
+
+    double screenHeight;
+    double screenWidth;
+    @Override
+    public void setScreenDimensions(double width, double height) {
+        this.screenWidth = width;
+        this.screenHeight = height;
+    }
 }

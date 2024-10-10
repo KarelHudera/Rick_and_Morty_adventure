@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.stage.Screen;
 import javafx.stage.Stage;
 import karel.hudera.rnma.logic.mechanic.InputHandler;
 import karel.hudera.rnma.logic.mechanic.game.Game;
@@ -31,6 +32,8 @@ public class MainApplication extends Application {
 
     // Controller for managing different scenes in the JavaFX stage.
     private StageController stageController;
+    double screenWidth = Screen.getPrimary().getBounds().getWidth();
+    double screenHeight = Screen.getPrimary().getBounds().getHeight();
 
     /**
      * The main method of the application.
@@ -105,10 +108,12 @@ public class MainApplication extends Application {
      */
     @Override
     public void start(Stage stage) throws IOException {
+
+
         stageController = new StageController(stage);
 
         // Load all views and set the initial view to the "start" scene.
-        loadViews();
+        loadViews(screenWidth, screenHeight);
         stageController.activate("start");
 
         // Configure the primary stage properties such as title and fullscreen.
@@ -120,12 +125,12 @@ public class MainApplication extends Application {
      *
      * @throws IOException If any of the FXML files fail to load.
      */
-    private void loadViews() throws IOException {
+    private void loadViews(double width, double height) throws IOException {
         loadView("start-view.fxml", "start");
         loadView("kitchen-view.fxml", "kitchen");
-        loadView("dining-room-view.fxml", "dining");
+        loadView("dining-room-view.fxml", "dining_room");
         loadView("garage-view.fxml", "garage");
-        loadView("living-room-view.fxml", "living");
+        loadView("living-room-view.fxml", "living_room");
     }
 
     /**
@@ -155,6 +160,9 @@ public class MainApplication extends Application {
         Object controller = loader.getController();
         if (controller instanceof StageControllerAware) {
             ((StageControllerAware) controller).setScreenController(stageController);
+            ((StageControllerAware) controller).setScreenDimensions(screenWidth, screenHeight);
+            System.out.println("Screen Width1: " + screenWidth);
+            System.out.println("Screen Height1: " + screenHeight);
         }
     }
 

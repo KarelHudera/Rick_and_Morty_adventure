@@ -15,4 +15,12 @@ public class KitchenViewController implements StageControllerAware {
         System.out.println("Back button clicked"); // Debugging line
         stageController.activate("start"); // Go back to the first page
     }
+
+    double screenHeight;
+    double screenWidth;
+    @Override
+    public void setScreenDimensions(double width, double height) {
+        this.screenWidth = width;
+        this.screenHeight = height;
+    }
 }

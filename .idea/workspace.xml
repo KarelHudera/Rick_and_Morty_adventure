@@ -4,25 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57f78e88-8e8e-4551-a47b-785d14a6f306" name="Changes" comment="Test">
-      <change afterPath="$PROJECT_DIR$/media/characters/Beauregard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/characters/Beth.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/characters/Frankenstein.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/characters/Jerry.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/characters/Nicky.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/characters/Pensylvester.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/characters/PhotogRaptor.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/characters/Poopybutthole.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/characters/Refridgerator.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/characters/Rick.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/characters/Steve.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/characters/Summer.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="57f78e88-8e8e-4551-a47b-785d14a6f306" name="Changes" comment="feat: MainApplication structure and comments">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/MainApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/mechanic/game/GamePlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/mechanic/game/GamePlan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/Start.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/controllers/DiningRoomViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/controllers/DiningRoomViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/controllers/GarageViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/controllers/GarageViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/controllers/KitchenViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/controllers/KitchenViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/controllers/LivingRoomViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/controllers/LivingRoomViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/controllers/StageControllerAware.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/controllers/StageControllerAware.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/controllers/StartViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/controllers/StartViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/start-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/start-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,8 +25,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -127,7 +119,23 @@
       <option name="project" value="LOCAL" />
       <updated>1728502834506</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat(media): characters images">
+      <option name="closed" value="true" />
+      <created>1728553458188</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1728553458188</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat: MainApplication structure and comments">
+      <option name="closed" value="true" />
+      <created>1728553596965</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1728553596965</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +156,8 @@
     <MESSAGE value="chore: jdk-23" />
     <MESSAGE value="refactor: new project structure -&gt; logic and presentation separation" />
     <MESSAGE value="Test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test" />
+    <MESSAGE value="feat(media): characters images" />
+    <MESSAGE value="feat: MainApplication structure and comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: MainApplication structure and comments" />
   </component>
 </project>
