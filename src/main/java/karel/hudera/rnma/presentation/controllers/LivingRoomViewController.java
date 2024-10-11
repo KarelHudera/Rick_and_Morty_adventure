@@ -1,6 +1,7 @@
 package karel.hudera.rnma.presentation.controllers;
 
 import javafx.fxml.FXML;
+import karel.hudera.rnma.presentation.controllers.base.BaseControllerAware;
 import karel.hudera.rnma.presentation.navigation.Navigator;
 
 public class LivingRoomViewController implements BaseControllerAware {
@@ -12,8 +13,14 @@ public class LivingRoomViewController implements BaseControllerAware {
     }
 
     @FXML
-    protected void onBackButtonClick() {
-        System.out.println("Back button clicked"); // Debugging line
-        navigator.navigateTo("start"); // Go back to the first page
+    protected void onDiningRoomButtonClick() {
+        System.out.println("Navigating to Dining Room"); // Debugging line
+        navigator.navigateTo("dining_room"); // Navigate to the Dining Room view
+    }
+
+    @FXML
+    protected void onKitchenButtonClick() {
+        System.out.println("Navigating to Kitchen"); // Debugging line
+        navigator.navigateTo("kitchen"); // Navigate to the Kitchen view
     }
 }

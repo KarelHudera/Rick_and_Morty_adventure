@@ -5,7 +5,7 @@ import javafx.stage.Stage;
 import karel.hudera.rnma.logic.mechanic.InputHandler;
 import karel.hudera.rnma.logic.mechanic.game.Game;
 import karel.hudera.rnma.presentation.navigation.Navigator;
-import karel.hudera.rnma.presentation.controllers.BaseViewController;
+import karel.hudera.rnma.presentation.controllers.base.BaseViewController;
 
 /**
  * The main class of the Rick and Morty Adventure game, responsible for initializing and launching the game in different modes.

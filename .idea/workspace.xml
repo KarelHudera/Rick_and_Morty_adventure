@@ -4,26 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57f78e88-8e8e-4551-a47b-785d14a6f306" name="Changes" comment="fix: better screen navigation + all .fxml files are removed">
-      <change afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/controllers/BaseViewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/navigation/Navigator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/dining-room-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/garage-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/kitchen-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/living-room-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/start-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/strings.xml" afterDir="false" />
+    <list default="true" id="57f78e88-8e8e-4551-a47b-785d14a6f306" name="Changes" comment="revert: all .fxml files are back">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/media/4k-rick-and-morty.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/MainApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/controllers/BaseControllerAware.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/controllers/base/BaseControllerAware.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/controllers/BaseViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/controllers/base/BaseViewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/controllers/DiningRoomViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/controllers/DiningRoomViewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/controllers/GarageViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/controllers/GarageViewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/controllers/KitchenViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/controllers/KitchenViewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/controllers/LivingRoomViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/controllers/LivingRoomViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/controllers/StageController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/controllers/StageControllerAware.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/controllers/StageControllerAware.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/controllers/StartViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/controllers/StartViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/ui/MainUI.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/dining-room-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/dining-room-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/garage-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/garage-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/kitchen-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/kitchen-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/living-room-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/living-room-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/start-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/start-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +81,10 @@
       <recent name="karel.hudera.rnma.presentation.controllers" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/media" />
       <recent name="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -164,7 +165,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728595445788</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="revert: all .fxml files are back">
+      <option name="closed" value="true" />
+      <created>1728683102930</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1728683102930</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,6 +198,7 @@
     <MESSAGE value="feat: MainApplication structure and comments" />
     <MESSAGE value="feat: screen navigation" />
     <MESSAGE value="fix: better screen navigation + all .fxml files are removed" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: better screen navigation + all .fxml files are removed" />
+    <MESSAGE value="revert: all .fxml files are back" />
+    <option name="LAST_COMMIT_MESSAGE" value="revert: all .fxml files are back" />
   </component>
 </project>

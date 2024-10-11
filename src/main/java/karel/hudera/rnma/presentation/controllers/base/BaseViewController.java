@@ -1,4 +1,4 @@
-package karel.hudera.rnma.presentation.controllers;
+package karel.hudera.rnma.presentation.controllers.base;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -22,9 +22,9 @@ public class BaseViewController {
     // Entry point to launch UI
     public void launchUI(Stage stage) throws IOException {
         viewHolder = new BorderPane(); // Initialize viewHolder (BorderPane)
+        viewHolder.setTop(new VBox(new Button("Top")));
 
         navigator = new Navigator(viewHolder); // Initialize the Navigator with viewHolder
-        viewHolder.setTop(new VBox(new Button("Top")));
         loadViews(); // Load all FXML views into Navigator
 
         navigator.navigateTo("start"); // Set the initial view to 'start'

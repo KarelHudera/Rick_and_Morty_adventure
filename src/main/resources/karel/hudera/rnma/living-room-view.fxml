@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="karel.hudera.rnma.presentation.controllers.LivingRoomViewController"
-            prefHeight="400.0" prefWidth="600.0">
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.HBox?>
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="karel.hudera.rnma.presentation.controllers.LivingRoomViewController">
+    <!-- Spacer region to push the button container down -->
+    <Region VBox.vgrow="ALWAYS"/>
 
-</AnchorPane>
+    <HBox spacing="20.0" alignment="CENTER" style="-fx-padding: 20 0 10 0">
+    <Button text="Go to Dining Room" onAction="#onDiningRoomButtonClick"/>
+    <Button text="Go to Kitchen" onAction="#onKitchenButtonClick"/>
+    </HBox>
+</VBox>

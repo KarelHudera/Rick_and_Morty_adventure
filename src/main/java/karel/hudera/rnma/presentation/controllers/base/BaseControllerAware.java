@@ -1,4 +1,4 @@
-package karel.hudera.rnma.presentation.controllers;
+package karel.hudera.rnma.presentation.controllers.base;
 
 import karel.hudera.rnma.presentation.navigation.Navigator;
 

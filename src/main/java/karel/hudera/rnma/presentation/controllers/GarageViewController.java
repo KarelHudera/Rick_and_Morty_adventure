@@ -1,6 +1,7 @@
 package karel.hudera.rnma.presentation.controllers;
 
 import javafx.fxml.FXML;
+import karel.hudera.rnma.presentation.controllers.base.BaseControllerAware;
 import karel.hudera.rnma.presentation.navigation.Navigator;
 
 public class GarageViewController implements BaseControllerAware {
@@ -11,10 +12,9 @@ public class GarageViewController implements BaseControllerAware {
         this.navigator = navigator;
     }
 
-
     @FXML
-    protected void onBackButtonClick() {
-        System.out.println("Back button clicked"); // Debugging line
-        navigator.navigateTo("start"); // Go back to the first page
+    protected void onKitchenButtonClick() {
+        System.out.println("Navigating to Kitchen"); // Debugging line
+        navigator.navigateTo("kitchen"); // Navigate to the Kitchen view
     }
 }
