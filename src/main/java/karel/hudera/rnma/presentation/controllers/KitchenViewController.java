@@ -1,26 +1,23 @@
 package karel.hudera.rnma.presentation.controllers;
 
 import javafx.fxml.FXML;
+import karel.hudera.rnma.presentation.navigation.Navigator;
 
-public class KitchenViewController implements StageControllerAware {
-    private StageController stageController;
+public class KitchenViewController implements BaseControllerAware {
+    private Navigator navigator;
 
     @Override
-    public void setScreenController(StageController stageController) {
-        this.stageController = stageController;
+    public void setNavigator(Navigator navigator) {
+        this.navigator = navigator;
     }
 
     @FXML
     protected void onBackButtonClick() {
         System.out.println("Back button clicked"); // Debugging line
-        stageController.activate("start"); // Go back to the first page
+        navigator.navigateTo("start"); // Go back to the first page
+
+
     }
 
-    double screenHeight;
-    double screenWidth;
-    @Override
-    public void setScreenDimensions(double width, double height) {
-        this.screenWidth = width;
-        this.screenHeight = height;
-    }
+
 }
