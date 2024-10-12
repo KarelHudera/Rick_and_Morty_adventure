@@ -7,8 +7,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Region?>
 <VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="karel.hudera.rnma.presentation.controllers.KitchenViewController"
-      style="-fx-background-color: red;">
+      fx:controller="karel.hudera.rnma.presentation.controllers.KitchenViewController">
     <Label text="This is the Kitchen!" />
     <!-- Spacer region to push the button container down -->
     <Region VBox.vgrow="ALWAYS"/>

@@ -6,6 +6,8 @@ import karel.hudera.rnma.logic.items.Item;
 import karel.hudera.rnma.logic.player.Inventory;
 import karel.hudera.rnma.logic.rooms.Room;
 import karel.hudera.rnma.logic.strings.StringResources;
+import karel.hudera.rnma.presentation.observer.Observable;
+import karel.hudera.rnma.presentation.observer.Observer;
 
 import java.util.*;
 
@@ -15,12 +17,13 @@ import java.util.*;
  *
  * @author KarelHudera
  */
-public class GamePlan {
+public class GamePlan implements Observable {
     private Game game;
     private Room currentRoom;
     private Inventory inventory = new Inventory();
     private Map<String, Room> rooms = new HashMap<>();
     private Map<String, GameCharacter> characters = new HashMap<>();
+    private Set<Observer> observersList = new HashSet<>();
 
     /**
      * Constructs a new GamePlan instance and initializes the game world.
@@ -164,6 +167,9 @@ public class GamePlan {
      */
     public void setCurrentRoom(Room currentRoom) {
         this.currentRoom = currentRoom;
+        for (Observer observer : observersList) {
+            observer.update();
+        }
     }
 
     /**
@@ -193,5 +199,10 @@ public class GamePlan {
      */
     public Inventory getInventory() {
         return this.inventory;
+    }
+
+    @Override
+    public void observe(Observer observer) {
+        observersList.add(observer);
     }
 }

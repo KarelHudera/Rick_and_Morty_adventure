@@ -1,24 +1,21 @@
-package karel.hudera.rnma.presentation.controllers.base;
+package karel.hudera.rnma.presentation;
 
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.control.ListView;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 import karel.hudera.rnma.MainApplication;
-import karel.hudera.rnma.logic.characters.GameCharacter;
 import karel.hudera.rnma.logic.mechanic.game.Game;
 import karel.hudera.rnma.logic.mechanic.game.IGame;
+import karel.hudera.rnma.presentation.controllers.base.BaseControllerAware;
+import karel.hudera.rnma.presentation.controllers.base.BaseLayoutController;
 import karel.hudera.rnma.presentation.navigation.Navigator;
 
 import java.io.IOException;
 
-public class BaseViewController {
+public class BaseView {
     private static final double screenWidth = Screen.getPrimary().getBounds().getWidth();
     private static final double screenHeight = Screen.getPrimary().getBounds().getHeight();
 

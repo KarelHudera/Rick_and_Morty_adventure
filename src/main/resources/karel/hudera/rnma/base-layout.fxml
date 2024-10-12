@@ -10,8 +10,8 @@
     <!-- Define top content (optional) -->
     <top>
         <VBox alignment="CENTER">
-            <Button fx:id="load" text="Go to Kitchen" onAction="#onLoad"/>
             <ListView fx:id="charactersList"/>
+            <Button fx:id="openShieldsButton" text="Open Shields" onAction="#handleOpenShields"/>
         </VBox>
     </top>
 

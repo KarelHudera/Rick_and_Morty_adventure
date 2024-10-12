@@ -11,7 +11,6 @@
       fx:controller="karel.hudera.rnma.presentation.controllers.GarageViewController"
       prefHeight="400.0" prefWidth="600.0">
 
-    <Label text="This is the Garage!" />
 
     <!-- Spacer region to push the button container down -->
     <Region VBox.vgrow="ALWAYS"/>

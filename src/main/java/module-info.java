@@ -7,4 +7,5 @@ module karel.hudera.rnma {
     exports karel.hudera.rnma;
     opens karel.hudera.rnma.presentation.navigation to javafx.fxml;
     opens karel.hudera.rnma.presentation.controllers.base to javafx.fxml;
+    opens karel.hudera.rnma.presentation to javafx.fxml;
 }

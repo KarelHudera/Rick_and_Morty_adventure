@@ -5,7 +5,7 @@ import javafx.stage.Stage;
 import karel.hudera.rnma.logic.mechanic.InputHandler;
 import karel.hudera.rnma.logic.mechanic.game.Game;
 import karel.hudera.rnma.presentation.navigation.Navigator;
-import karel.hudera.rnma.presentation.controllers.base.BaseViewController;
+import karel.hudera.rnma.presentation.BaseView;
 
 /**
  * The main class of the Rick and Morty Adventure game, responsible for initializing and launching the game in different modes.
@@ -90,8 +90,8 @@ public class MainApplication extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        BaseViewController baseViewController = new BaseViewController();
-        baseViewController.launchUI(primaryStage);
+        BaseView baseView = new BaseView();
+        baseView.launchUI(primaryStage);
         primaryStage.setMaximized(true);
     }
 }
