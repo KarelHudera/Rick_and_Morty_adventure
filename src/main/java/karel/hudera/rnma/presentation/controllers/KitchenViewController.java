@@ -14,19 +14,25 @@ public class KitchenViewController implements BaseControllerAware {
 
     @FXML
     protected void onDiningRoomButtonClick() {
-        System.out.println("Navigating to Dining Room"); // Debugging line
-        navigator.navigateTo("dining_room"); // Navigate to the Dining Room view
+        navigator.navigateTo("dining_room");
+        navigator.getGame().handleInput("goto dining_room");
+        String currentRoom = navigator.getGame().getGamePlan().getCurrentRoom().getName();
+        System.out.println(currentRoom);
     }
 
     @FXML
     protected void onGarageButtonClick() {
-        System.out.println("Navigating to Garage"); // Debugging line
-        navigator.navigateTo("garage"); // Navigate to the Garage view
+        navigator.navigateTo("garage");
+        navigator.getGame().handleInput("goto garage");
+        String currentRoom = navigator.getGame().getGamePlan().getCurrentRoom().getName();
+        System.out.println(currentRoom);
     }
 
     @FXML
     protected void onLivingRoomButtonClick() {
-        System.out.println("Navigating to Living Room"); // Debugging line
-        navigator.navigateTo("living_room"); // Navigate to the Living Room view
+        navigator.navigateTo("living_room");
+        navigator.getGame().handleInput("goto living_room");
+        String currentRoom = navigator.getGame().getGamePlan().getCurrentRoom().getName();
+        System.out.println(currentRoom);
     }
 }

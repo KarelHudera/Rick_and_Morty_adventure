@@ -14,7 +14,7 @@
     <Region fx:id="spacer" VBox.vgrow="ALWAYS"/>
 
     <HBox spacing="20.0" alignment="CENTER" style="-fx-padding: 20 0 10 0;">
-        <Button text="Go to Kitchen" onAction="#onKitchenButtonClick"/>
-        <Button text="Go to Living Room" onAction="#onLivingRoomButtonClick"/>
+        <Button fx:id="kitchenButton" text="Go to Kitchen" onAction="#onKitchenButtonClick"/>
+        <Button fx:id="livingRoomButton" text="Go to Living Room" onAction="#onLivingRoomButtonClick"/>
     </HBox>
 </VBox>

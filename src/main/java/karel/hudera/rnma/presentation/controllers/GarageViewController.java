@@ -14,7 +14,9 @@ public class GarageViewController implements BaseControllerAware {
 
     @FXML
     protected void onKitchenButtonClick() {
-        System.out.println("Navigating to Kitchen"); // Debugging line
         navigator.navigateTo("kitchen"); // Navigate to the Kitchen view
+        navigator.getGame().handleInput("goto kitchen");
+        String currentRoom = navigator.getGame().getGamePlan().getCurrentRoom().getName();
+        System.out.println(currentRoom);
     }
 }

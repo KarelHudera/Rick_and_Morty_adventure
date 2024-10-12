@@ -248,4 +248,15 @@ public class Room {
 
         return outputText.substring(0, outputText.length() - 2);
     }
+
+
+
+    /**
+     * Returns a collection of all game characters in the room.
+     *
+     * @return a collection of GameCharacter objects
+     */
+    public Collection<GameCharacter> getAllGameCharacters() {
+        return characters.values(); // Returns a Collection of GameCharacter objects
+    }
 }

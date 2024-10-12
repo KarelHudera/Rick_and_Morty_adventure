@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="karel.hudera.rnma.presentation.controllers.base.BaseLayoutController"
+            prefHeight="800.0" prefWidth="1200.0">
+
+    <!-- Define top content (optional) -->
+    <top>
+        <VBox alignment="CENTER">
+            <Button fx:id="load" text="Go to Kitchen" onAction="#onLoad"/>
+            <ListView fx:id="charactersList"/>
+        </VBox>
+    </top>
+
+    <!-- The center pane where content will be switched dynamically -->
+    <center>
+        <Pane fx:id="contentPane" />
+    </center>
+
+</BorderPane>
