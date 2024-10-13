@@ -167,6 +167,10 @@ public class GamePlan implements Observable {
      */
     public void setCurrentRoom(Room currentRoom) {
         this.currentRoom = currentRoom;
+        notifyObservers();
+    }
+
+    private void notifyObservers() {
         for (Observer observer : observersList) {
             observer.update();
         }

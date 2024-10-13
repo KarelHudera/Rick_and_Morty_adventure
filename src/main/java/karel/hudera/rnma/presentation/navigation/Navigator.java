@@ -1,23 +1,25 @@
 package karel.hudera.rnma.presentation.navigation;
 
+import javafx.scene.Node;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
+import javafx.scene.layout.VBox;
 import karel.hudera.rnma.logic.mechanic.game.IGame;
 
 import java.util.HashMap;
 
 public class Navigator {
     private HashMap<String, Pane> views = new HashMap<>();
-    private BorderPane viewHolder; // Reference to the BorderPane that will hold the views
+    private VBox viewHolder; // Reference to the BorderPane that will hold the views
     private IGame game; // Add the game instance
 
-    public Navigator(BorderPane viewHolder, IGame game) {
+    public Navigator(VBox viewHolder, IGame game) {
         this.viewHolder = viewHolder;
         this.game = game;
     }
 
     // Add a screen to the controller
-    public void addScreen(String name, Pane screen) {
+    public void addScreen(String name, VBox screen) {
         views.put(name, screen);
     }
 
@@ -25,8 +27,8 @@ public class Navigator {
     public void navigateTo(String name) {
         Pane view = views.get(name); // Get the corresponding screen
         if (view != null) {
-            viewHolder.setCenter(view); // Set the screen in the center of the viewHolder
-
+            //viewHolder.setCenter(view); // Set the screen in the center of the viewHolder
+            //((BorderPane) viewHolder).setBottom(view);
         } else {
             System.out.println("Screen not found: " + name);
         }

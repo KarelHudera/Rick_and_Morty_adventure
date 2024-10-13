@@ -4,16 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57f78e88-8e8e-4551-a47b-785d14a6f306" name="Changes" comment="feat: characters list">
-      <change afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/observer/Observable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/observer/Observer.java" afterDir="false" />
+    <list default="true" id="57f78e88-8e8e-4551-a47b-785d14a6f306" name="Changes" comment="feat: automatic characters list update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/MainApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/mechanic/game/GamePlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/mechanic/game/GamePlan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/BaseView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/BaseView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/controllers/StartViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/controllers/StartViewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/controllers/base/BaseLayoutController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/controllers/base/BaseLayoutController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/controllers/base/BaseViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/BaseView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/navigation/Navigator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/navigation/Navigator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/observer/Observable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/observer/Observable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/observer/Observer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/observer/Observer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/base-layout.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/base-layout.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/view/kitchen-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/view/kitchen-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +178,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728762283927</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="feat: automatic characters list update">
+      <option name="closed" value="true" />
+      <created>1728766694144</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1728766694144</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,6 +213,7 @@
     <MESSAGE value="fix: better screen navigation + all .fxml files are removed" />
     <MESSAGE value="revert: all .fxml files are back" />
     <MESSAGE value="feat: characters list" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: characters list" />
+    <MESSAGE value="feat: automatic characters list update" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: automatic characters list update" />
   </component>
 </project>

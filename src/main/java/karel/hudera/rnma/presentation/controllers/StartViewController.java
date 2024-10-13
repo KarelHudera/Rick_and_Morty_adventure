@@ -1,11 +1,9 @@
 package karel.hudera.rnma.presentation.controllers;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.StackPane;
-import javafx.scene.layout.VBox;
 import javafx.stage.Screen;
 import karel.hudera.rnma.presentation.controllers.base.BaseControllerAware;
 import karel.hudera.rnma.presentation.navigation.Navigator;

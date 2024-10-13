@@ -2,8 +2,8 @@ package karel.hudera.rnma.presentation;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
+import javafx.scene.layout.VBox;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 import karel.hudera.rnma.MainApplication;
@@ -20,7 +20,7 @@ public class BaseView {
     private static final double screenHeight = Screen.getPrimary().getBounds().getHeight();
 
     private Navigator navigator;
-    private BorderPane viewHolder; // This is where the views will switch
+    private VBox viewHolder; // This is where the views will switch
     private IGame game = new Game();
 
     // Entry point to launch UI
@@ -46,18 +46,17 @@ public class BaseView {
 
     // Load all views into Navigator
     private void loadViews() throws IOException {
-        loadView("view/start-view.fxml", "start");
+        //loadView("view/start-view.fxml", "start");
         loadView("view/kitchen-view.fxml", "kitchen");
         loadView("view/dining-room-view.fxml", "dining_room");
         loadView("view/garage-view.fxml", "garage");
         loadView("view/living-room-view.fxml", "living_room");
-       // loadView("base-layout.fxml", "game");
     }
 
     // Helper to load individual views
     private void loadView(String fxmlFile, String screenName) throws IOException {
         FXMLLoader loader = new FXMLLoader(MainApplication.class.getResource(fxmlFile));
-        Pane view = loader.load();
+        VBox view = loader.load();
 
         // Configure the controller to have the Navigator reference
         Object controller = loader.getController();

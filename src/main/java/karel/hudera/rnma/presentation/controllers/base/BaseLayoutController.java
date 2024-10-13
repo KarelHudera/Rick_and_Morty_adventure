@@ -2,7 +2,6 @@ package karel.hudera.rnma.presentation.controllers.base;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.ListView;
 import karel.hudera.rnma.logic.characters.GameCharacter;
@@ -31,7 +30,7 @@ public class BaseLayoutController implements BaseControllerAware, Observer {
     }
 
     @FXML
-    private void initialize() {
+    public void initialize() {
         charactersList.setItems(characters); // Set items for the ListView
         actualizeCharacters(); // Optionally load characters at the start
 
@@ -60,5 +59,12 @@ public class BaseLayoutController implements BaseControllerAware, Observer {
         navigator.getGame().getGamePlan().endGame();
         String end =navigator.getGame().handleInput("open shields");
         System.out.println(end);
+    }
+
+    @FXML
+    private void onCharacterClicked() {
+        charactersList.getSelectionModel().getSelectedItem();
+        if (charactersList.getSelectionModel().getSelectedItem() == null) return;
+        System.out.println(charactersList.getSelectionModel().getSelectedItem());
     }
 }

@@ -23,6 +23,7 @@ import karel.hudera.rnma.presentation.BaseView;
  * @author KarelHudera
  */
 public class MainApplication extends Application {
+
     /**
      * The main method of the application.
      * Based on the command-line arguments, it launches the appropriate mode of the game.
