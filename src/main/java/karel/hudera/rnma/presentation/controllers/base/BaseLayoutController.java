@@ -13,6 +13,7 @@ public class BaseLayoutController implements BaseControllerAware, Observer {
     @FXML
     private ListView<GameCharacter> charactersList; // Ensure this uses generics
     private ObservableList<GameCharacter> characters = FXCollections.observableArrayList();
+    @FXML
     private Navigator navigator;
 
     @Override

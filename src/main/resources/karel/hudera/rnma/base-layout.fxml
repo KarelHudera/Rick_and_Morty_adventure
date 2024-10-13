@@ -1,44 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-        <?import javafx.scene.control.Button?>
-        <?import javafx.scene.control.ListView?>
-        <?import javafx.scene.control.SplitPane?>
-        <?import javafx.scene.control.TextArea?>
-        <?import javafx.scene.layout.AnchorPane?>
-        <?import javafx.scene.layout.BorderPane?>
-        <?import javafx.scene.layout.VBox?>
-
-
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
-<VBox xmlns="http://javafx.com/javafx/23" fx:controller="karel.hudera.rnma.presentation.controllers.base.BaseLayoutController"
-      xmlns:fx="http://javafx.com/fxml/1">
-<children>
-    <SplitPane dividerPositions="0.5, 0.5" orientation="VERTICAL" >
-        <items>
-            <AnchorPane>
-                <children>
-                    <ListView fx:id="charactersList" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"/>
-                </children>
-            </AnchorPane>
-            <AnchorPane minHeight="0.0">
-                <children>
-                    <BorderPane >
-                        <center>
-                            <!-- Use HBox to divide the TextArea and Button 50/50 -->
-                            <HBox spacing="10.0" prefWidth="900.0">
-                                <TextArea HBox.hgrow="ALWAYS" />
-                            </HBox>
-                        </center>
-                        <right>
-
-                        </right>
-                    </BorderPane>
-                </children>
-            </AnchorPane>
-
-            <AnchorPane/>
-        </items>
-    </SplitPane>
-</children>
-</VBox>
-
+<?import javafx.scene.layout.VBox?>
+<BorderPane xmlns="http://javafx.com/javafx/23"
+            fx:controller="karel.hudera.rnma.presentation.controllers.base.BaseLayoutController"
+            xmlns:fx="http://javafx.com/fxml/1">
+    <top>
+        <VBox>
+            <ListView fx:id="charactersList" />
+            <!-- Use HBox to divide the TextArea and Button 50/50 -->
+            <HBox >
+                <!-- TextArea with a fixed width of 50 -->
+                <TextArea HBox.hgrow="ALWAYS"/>
+                <!-- Button will take up the remaining space -->
+                <Button fx:id="handleOpenShields" text="Open Shields"/>
+            </HBox>
+        </VBox>
+    </top>
+</BorderPane>

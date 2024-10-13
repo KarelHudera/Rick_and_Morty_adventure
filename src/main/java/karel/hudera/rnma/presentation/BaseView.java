@@ -2,6 +2,8 @@ package karel.hudera.rnma.presentation;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Screen;
@@ -20,7 +22,7 @@ public class BaseView {
     private static final double screenHeight = Screen.getPrimary().getBounds().getHeight();
 
     private Navigator navigator;
-    private VBox viewHolder; // This is where the views will switch
+    private BorderPane viewHolder; // This is where the views will switch
     private IGame game = new Game();
 
     // Entry point to launch UI
@@ -56,7 +58,7 @@ public class BaseView {
     // Helper to load individual views
     private void loadView(String fxmlFile, String screenName) throws IOException {
         FXMLLoader loader = new FXMLLoader(MainApplication.class.getResource(fxmlFile));
-        VBox view = loader.load();
+        HBox view = loader.load();
 
         // Configure the controller to have the Navigator reference
         Object controller = loader.getController();

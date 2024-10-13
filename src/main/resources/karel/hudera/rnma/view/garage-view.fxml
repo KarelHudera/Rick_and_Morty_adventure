@@ -6,16 +6,16 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.layout.Region?>
 
-<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx"
-      xmlns:fx="http://javafx.com/fxml"
-      fx:controller="karel.hudera.rnma.presentation.controllers.GarageViewController"
-      prefHeight="400.0" prefWidth="600.0">
+<?import javafx.scene.layout.BorderPane?>
+<HBox xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="karel.hudera.rnma.presentation.controllers.GarageViewController"
+            >
 
 
     <!-- Spacer region to push the button container down -->
-    <Region VBox.vgrow="ALWAYS"/>
 
-    <HBox spacing="20.0" alignment="CENTER" style="-fx-padding: 20 0 10 0">
+    <HBox >
         <Button text="Go to Kitchen" onAction="#onKitchenButtonClick"/>
     </HBox>
-</VBox>
+</HBox>
