@@ -6,6 +6,7 @@ import karel.hudera.rnma.logic.items.Item;
 import karel.hudera.rnma.logic.player.Inventory;
 import karel.hudera.rnma.logic.rooms.Room;
 import karel.hudera.rnma.logic.strings.StringResources;
+import karel.hudera.rnma.presentation.observer.GameChange;
 import karel.hudera.rnma.presentation.observer.Observable;
 import karel.hudera.rnma.presentation.observer.Observer;
 
@@ -23,7 +24,7 @@ public class GamePlan implements Observable {
     private Inventory inventory = new Inventory();
     private Map<String, Room> rooms = new HashMap<>();
     private Map<String, GameCharacter> characters = new HashMap<>();
-    private Set<Observer> observersList = new HashSet<>();
+    private Map<GameChange, Set<Observer>> observersList = new HashMap<>();
 
     /**
      * Constructs a new GamePlan instance and initializes the game world.
@@ -33,6 +34,9 @@ public class GamePlan implements Observable {
     public GamePlan(Game game) {
         this.game = game;
         initializeGame();
+        for (GameChange change : GameChange.values()) {
+            observersList.put(change, new HashSet<>());
+        }
     }
 
     /**
@@ -167,11 +171,18 @@ public class GamePlan implements Observable {
      */
     public void setCurrentRoom(Room currentRoom) {
         this.currentRoom = currentRoom;
-        notifyObservers();
+        notifyObservers(GameChange.NEW_ROOM);
     }
 
-    private void notifyObservers() {
-        for (Observer observer : observersList) {
+    public void characterKilled() {
+        // Notify observers that a character has been killed
+        notifyObservers(GameChange.CHARACTER_KILL);
+        System.out.println("nigggagagagagagaggaggagagagag");
+        // Additional logic can be added here if needed, e.g., updating game state or UI
+    }
+
+    private void notifyObservers(GameChange change) {
+        for (Observer observer : observersList.get(change)) {
             observer.update();
         }
     }
@@ -206,7 +217,7 @@ public class GamePlan implements Observable {
     }
 
     @Override
-    public void observe(Observer observer) {
-        observersList.add(observer);
+    public void observe(GameChange gameChange, Observer observer) {
+        observersList.get(gameChange).add(observer);
     }
 }

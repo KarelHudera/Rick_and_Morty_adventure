@@ -1,10 +1,8 @@
 package karel.hudera.rnma.presentation.navigation;
 
-import javafx.scene.Node;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
-import javafx.scene.layout.VBox;
 import karel.hudera.rnma.logic.mechanic.game.IGame;
 
 import java.util.HashMap;

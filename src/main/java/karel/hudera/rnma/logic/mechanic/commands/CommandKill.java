@@ -47,6 +47,7 @@ public class CommandKill extends Command {
         }
 
         // Kill the character
+        this.getGamePlan().characterKilled(); // Notify GamePlan
         this.getGamePlan().getGameCharacterByName(characterName).setDead();
         return capitalizeFirstLetter(characterName) + StringResources.Info.KILLED;  // Success message
     }

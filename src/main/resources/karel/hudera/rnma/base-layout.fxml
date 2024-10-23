@@ -11,13 +11,18 @@
             xmlns:fx="http://javafx.com/fxml/1">
     <top>
         <VBox>
-            <ListView fx:id="charactersList" />
+            <ListView onMouseClicked="#onCharacterClicked" fx:id="charactersList" />
             <!-- Use HBox to divide the TextArea and Button 50/50 -->
             <HBox >
                 <!-- TextArea with a fixed width of 50 -->
-                <TextArea HBox.hgrow="ALWAYS"/>
+                <TextArea fx:id="conversationTextArea" HBox.hgrow="ALWAYS"/>
                 <!-- Button will take up the remaining space -->
-                <Button fx:id="handleOpenShields" text="Open Shields"/>
+                <VBox>
+                    <Button fx:id="handleOpenShields" text="Open Shields" onAction="#handleOpenShields"/>
+                    <Button fx:id="killButton" text="Kill" onAction="#kill"/>
+                </VBox>
+
+
             </HBox>
         </VBox>
     </top>

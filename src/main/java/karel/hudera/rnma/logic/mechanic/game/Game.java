@@ -2,6 +2,14 @@ package karel.hudera.rnma.logic.mechanic.game;
 
 import karel.hudera.rnma.logic.mechanic.commands.*;
 import karel.hudera.rnma.logic.strings.StringResources;
+import karel.hudera.rnma.presentation.observer.GameChange;
+import karel.hudera.rnma.presentation.observer.Observable;
+import karel.hudera.rnma.presentation.observer.Observer;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 
 /**
  * Represents the main game logic, managing commands, game state, and interactions.
@@ -13,6 +21,7 @@ public class Game implements IGame {
     private CommandsList commandsList;
     private GamePlan gamePlan;
     private boolean gameOver = false;
+    private Map<GameChange, Set<Observer>> observersList = new HashMap<>();
 
     /**
      * Constructs a new Game instance and initializes the game plan and commands.
@@ -21,6 +30,9 @@ public class Game implements IGame {
         gamePlan = new GamePlan(this);
         commandsList = new CommandsList();
         initializeCommands();
+        for (GameChange change : GameChange.values()) {
+            observersList.put(change, new HashSet<>());
+        }
     }
 
     /**
@@ -88,6 +100,7 @@ public class Game implements IGame {
      */
     @Override
     public boolean gameOver() {
+        notifyObservers(GameChange.GAME_OVER);
         return gameOver;
     }
 
@@ -109,5 +122,16 @@ public class Game implements IGame {
     @Override
     public GamePlan getGamePlan() {
         return gamePlan;
+    }
+
+    @Override
+    public void observe(GameChange gameChange, Observer observer) {
+        observersList.get(gameChange).add(observer);
+    }
+
+    private void notifyObservers(GameChange change) {
+        for (Observer observer : observersList.get(change)) {
+            observer.update();
+        }
     }
 }

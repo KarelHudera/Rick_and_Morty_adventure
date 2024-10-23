@@ -1,6 +1,7 @@
 package karel.hudera.rnma.presentation.controllers;
 
 import javafx.fxml.FXML;
+import karel.hudera.rnma.logic.strings.StringResources;
 import karel.hudera.rnma.presentation.controllers.base.BaseControllerAware;
 import karel.hudera.rnma.presentation.navigation.Navigator;
 
@@ -15,7 +16,7 @@ public class GarageViewController implements BaseControllerAware {
     @FXML
     protected void onKitchenButtonClick() {
         navigator.navigateTo("kitchen"); // Navigate to the Kitchen view
-        navigator.getGame().handleInput("goto kitchen");
+        navigator.getGame().handleInput(StringResources.Commands.GOTO + " kitchen");
         String currentRoom = navigator.getGame().getGamePlan().getCurrentRoom().getName();
         System.out.println(currentRoom);
     }

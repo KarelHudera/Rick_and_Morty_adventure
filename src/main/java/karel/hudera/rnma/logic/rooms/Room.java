@@ -256,7 +256,18 @@ public class Room {
      *
      * @return a collection of GameCharacter objects
      */
-    public Collection<GameCharacter> getAllGameCharacters() {
-        return characters.values(); // Returns a Collection of GameCharacter objects
+    /**
+     * Returns a collection of all alive game characters in the room.
+     *
+     * @return a collection of alive GameCharacter objects
+     */
+    public Collection<GameCharacter> getAliveGameCharacters() {
+        Collection<GameCharacter> aliveCharacters = new ArrayList<>();
+        for (GameCharacter character : characters.values()) {
+            if (character.isAlive()) {
+                aliveCharacters.add(character);
+            }
+        }
+        return aliveCharacters; // Returns a collection of alive GameCharacter objects
     }
 }

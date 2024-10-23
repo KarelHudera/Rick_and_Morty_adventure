@@ -4,8 +4,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
-import javafx.scene.layout.Pane;
-import javafx.scene.layout.VBox;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 import karel.hudera.rnma.MainApplication;
@@ -16,6 +14,8 @@ import karel.hudera.rnma.presentation.controllers.base.BaseLayoutController;
 import karel.hudera.rnma.presentation.navigation.Navigator;
 
 import java.io.IOException;
+
+import static karel.hudera.rnma.logic.strings.StringResources.GAME_NAME;
 
 public class BaseView {
     private static final double screenWidth = Screen.getPrimary().getBounds().getWidth();
@@ -41,7 +41,7 @@ public class BaseView {
         navigator.navigateTo("dining_room"); // Set the initial view to 'dining_room'
 
         Scene scene = new Scene(viewHolder); // Create a scene with the persistent viewHolder
-        stage.setTitle("Rick and Morty Adventure");
+        stage.setTitle(GAME_NAME);
         stage.setScene(scene); // Set scene on the stage once
         stage.show();
     }
