@@ -87,4 +87,9 @@ public class GameCharacter implements IGameCharacter {
     public void setSpeakString(String speakString) {
         this.speakString = speakString;
     }
+
+    @Override
+    public String toString() {
+        return name;
+    }
 }

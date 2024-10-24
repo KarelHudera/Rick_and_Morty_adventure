@@ -12,6 +12,8 @@ public class StringResources {
     /** Prefix for error messages. */
     public static final String ERROR_PREFIX = "\uD83D\uDD34 "; // Red circle emoji for errors
 
+    public static final String GAME_NAME = "Rick and Morty Adventure "; // Red circle emoji for errors
+
     /**
      * Contains strings related to game output and commands.
      */

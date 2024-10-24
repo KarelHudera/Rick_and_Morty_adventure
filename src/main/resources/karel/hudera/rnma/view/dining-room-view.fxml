@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="karel.hudera.rnma.presentation.controllers.DiningRoomViewController"
+      >
+
+    <HBox>
+        <Button fx:id="kitchenButton" text="Go to Kitchen" onAction="#onKitchenButtonClick"/>
+        <Button fx:id="livingRoomButton" text="Go to Living Room" onAction="#onLivingRoomButtonClick"/>
+    </HBox>
+</HBox>

@@ -1,5 +1,7 @@
 package karel.hudera.rnma.logic.mechanic.game;
 
+import karel.hudera.rnma.presentation.observer.Observable;
+
 public interface IGame {
     String getIntro();
     String getOutro();

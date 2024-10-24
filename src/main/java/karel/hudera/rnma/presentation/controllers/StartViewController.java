@@ -1,18 +1,45 @@
 package karel.hudera.rnma.presentation.controllers;
 
 import javafx.fxml.FXML;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.StackPane;
+import javafx.stage.Screen;
+import karel.hudera.rnma.presentation.controllers.base.BaseControllerAware;
+import karel.hudera.rnma.presentation.navigation.Navigator;
 
-public class StartViewController implements StageControllerAware {
+import java.util.Objects;
 
-    private StageController stageController;
+public class StartViewController implements BaseControllerAware {
+    private Navigator navigator;
 
     @Override
-    public void setScreenController(StageController stageController) {
-        this.stageController = stageController;
+    public void setNavigator(Navigator navigator) {
+        this.navigator = navigator;
+    }
+
+    private static final double screenWidth = Screen.getPrimary().getBounds().getWidth();
+    private static final double screenHeight = Screen.getPrimary().getBounds().getHeight();
+
+    @FXML
+    private ImageView backgroundImage;
+    @FXML
+    private StackPane rootPane;
+
+    public void initialize() {
+        // Load the image
+        Image image = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/karel/hudera/rnma/media/4k-rick-and-morty.jpg")));
+        backgroundImage.setImage(image);
+
+        // Bind the ImageView's fitWidth and fitHeight properties to the StackPane size
+        //backgroundImage.setFitHeight(screenHeight);
+        backgroundImage.setFitWidth(screenWidth);
+        //backgroundImage.fitWidthProperty().bind(rootPane.widthProperty());
+        //backgroundImage.fitHeightProperty().bind(rootPane.heightProperty());
     }
 
     @FXML
-    protected void onHelloButtonClick() {
-        stageController.activate("kitchen"); // Switch to the second page
-    }
+    public void onStartGameButtonClick() {
+        navigator.changeScene("mainScene"); // To switch to the main scene
+            }
 }

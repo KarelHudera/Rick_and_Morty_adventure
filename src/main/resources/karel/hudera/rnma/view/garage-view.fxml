@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<HBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="karel.hudera.rnma.presentation.controllers.GarageViewController">
+
+    <HBox>
+        <Button text="Go to Kitchen" onAction="#onKitchenButtonClick"/>
+    </HBox>
+</HBox>

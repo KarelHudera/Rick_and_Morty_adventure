@@ -6,6 +6,9 @@ import karel.hudera.rnma.logic.items.Item;
 import karel.hudera.rnma.logic.player.Inventory;
 import karel.hudera.rnma.logic.rooms.Room;
 import karel.hudera.rnma.logic.strings.StringResources;
+import karel.hudera.rnma.presentation.observer.GameChange;
+import karel.hudera.rnma.presentation.observer.Observable;
+import karel.hudera.rnma.presentation.observer.Observer;
 
 import java.util.*;
 
@@ -15,12 +18,13 @@ import java.util.*;
  *
  * @author KarelHudera
  */
-public class GamePlan {
+public class GamePlan implements Observable {
     private Game game;
     private Room currentRoom;
     private Inventory inventory = new Inventory();
     private Map<String, Room> rooms = new HashMap<>();
     private Map<String, GameCharacter> characters = new HashMap<>();
+    private Map<GameChange, Set<Observer>> observersList = new HashMap<>();
 
     /**
      * Constructs a new GamePlan instance and initializes the game world.
@@ -30,6 +34,9 @@ public class GamePlan {
     public GamePlan(Game game) {
         this.game = game;
         initializeGame();
+        for (GameChange change : GameChange.values()) {
+            observersList.put(change, new HashSet<>());
+        }
     }
 
     /**
@@ -71,10 +78,10 @@ public class GamePlan {
         GameCharacter jerry = new GameCharacter("5", "jerry", StringResources.SpeakStrings.JERRY_SPEAK);
         GameCharacter nicky = new GameCharacter("76", "nicky", StringResources.SpeakStrings.NICKY_SPEAK);
         GameCharacter frankenstein = new GameCharacter("128", "frankenstein", StringResources.SpeakStrings.FRANKENSTEIN_SPEAK);
-        GameCharacter butler = new GameCharacter("236", "butler", StringResources.SpeakStrings.BUTLER_SPEAK);
+        GameCharacter butler = new GameCharacter("236", "beauregard", StringResources.SpeakStrings.BUTLER_SPEAK);
         GameCharacter poopybutthole = new GameCharacter("244", "poopybutthole", StringResources.SpeakStrings.POOPYBUTTHOLE_SPEAK);
-        GameCharacter fridge = new GameCharacter("248", "fridge", StringResources.SpeakStrings.FRIDGE_SPEAK);
-        GameCharacter pencilvester = new GameCharacter("259", "pencilvester", StringResources.SpeakStrings.PENCILVESTER_SPEAK);
+        GameCharacter fridge = new GameCharacter("248", "refridgerator", StringResources.SpeakStrings.FRIDGE_SPEAK);
+        GameCharacter pencilvester = new GameCharacter("259", "pensylvester", StringResources.SpeakStrings.PENCILVESTER_SPEAK);
         GameCharacter raptor = new GameCharacter("262", "photoraptor", StringResources.SpeakStrings.RAPTOR_SPEAK);
         GameCharacter steve = new GameCharacter("391", "steve", StringResources.SpeakStrings.STEVE_SPEAK);
 
@@ -141,6 +148,16 @@ public class GamePlan {
     public String endGame() {
         game.setGameOver(true);
 
+        notifyObservers(GameChange.GAME_OVER);
+
+        if (checkCharacterStates(characters)) {
+            return StringResources.Outro.GAME_OVER_WIN;
+        } else {
+            return StringResources.Outro.GAME_OVER_LOS;
+        }
+    }
+
+    public String getEndMessage() {
         if (checkCharacterStates(characters)) {
             return StringResources.Outro.GAME_OVER_WIN;
         } else {
@@ -164,6 +181,19 @@ public class GamePlan {
      */
     public void setCurrentRoom(Room currentRoom) {
         this.currentRoom = currentRoom;
+        notifyObservers(GameChange.NEW_ROOM);
+    }
+
+    public void characterKilled() {
+        // Notify observers that a character has been killed
+        notifyObservers(GameChange.CHARACTER_KILL);
+        // Additional logic can be added here if needed, e.g., updating game state or UI
+    }
+
+    private void notifyObservers(GameChange change) {
+        for (Observer observer : observersList.get(change)) {
+            observer.update();
+        }
     }
 
     /**
@@ -193,5 +223,10 @@ public class GamePlan {
      */
     public Inventory getInventory() {
         return this.inventory;
+    }
+
+    @Override
+    public void observe(GameChange gameChange, Observer observer) {
+        observersList.get(gameChange).add(observer);
     }
 }
