@@ -3,17 +3,16 @@ package karel.hudera.rnma.presentation.controllers.base;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextArea;
 import karel.hudera.rnma.logic.characters.GameCharacter;
 import karel.hudera.rnma.logic.items.Item;
 import karel.hudera.rnma.logic.strings.StringResources;
+import karel.hudera.rnma.presentation.items.GameCharacterListCell;
 import karel.hudera.rnma.presentation.navigation.Navigator;
 import karel.hudera.rnma.presentation.observer.GameChange;
-import karel.hudera.rnma.presentation.observer.Observer;
 
-public class BaseLayoutController implements BaseControllerAware, Observer {
+public class BaseLayoutController implements BaseControllerAware {
 
     @FXML
     private TextArea conversationTextArea;
@@ -31,8 +30,8 @@ public class BaseLayoutController implements BaseControllerAware, Observer {
             throw new IllegalStateException("Navigator is not set.");
         }
         this.navigator = navigator;
-        navigator.getGame().getGamePlan().observe(GameChange.NEW_ROOM, this);
-        navigator.getGame().getGamePlan().observe(GameChange.CHARACTER_KILL, this);
+        navigator.getGame().getGamePlan().observe(GameChange.NEW_ROOM, this::actualizeCharacters);
+        navigator.getGame().getGamePlan().observe(GameChange.CHARACTER_KILL, this::actualizeCharacters);
         navigator.getGame().getGamePlan().getInventory().addItem(weapon);
         actualizeCharacters();
     }
@@ -40,6 +39,7 @@ public class BaseLayoutController implements BaseControllerAware, Observer {
     @FXML
     public void initialize() {
         charactersList.setItems(characters); // Set items for the ListView
+        charactersList.setCellFactory(_ -> new GameCharacterListCell());
     }
 
     @FXML
@@ -50,19 +50,11 @@ public class BaseLayoutController implements BaseControllerAware, Observer {
         System.out.println(StringResources.Info.YOU_ARE_IN + navigator.getGame().getGamePlan().getCurrentRoom().getName());
     }
 
-    @Override
-    public void update() {
-        actualizeCharacters();
-    }
-
     @FXML
     private void handleOpenShields() {
-        System.out.println("handleOpenShields");
-        navigator.getGame().getGamePlan().endGame();
-        String end = navigator.getGame().handleInput(StringResources.Commands.END_GAME);
-        System.out.println(end);
-        charactersList.setDisable(true);
-        System.out.println(navigator.getGame().getGamePlan().endGame());
+        String x = navigator.getGame().getGamePlan().endGame();
+        System.out.println("handleOpenShields" + x);
+        navigator.changeScene("endScene");
     }
 
 

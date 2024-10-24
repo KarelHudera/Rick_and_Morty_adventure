@@ -148,6 +148,16 @@ public class GamePlan implements Observable {
     public String endGame() {
         game.setGameOver(true);
 
+        notifyObservers(GameChange.GAME_OVER);
+
+        if (checkCharacterStates(characters)) {
+            return StringResources.Outro.GAME_OVER_WIN;
+        } else {
+            return StringResources.Outro.GAME_OVER_LOS;
+        }
+    }
+
+    public String getEndMessage() {
         if (checkCharacterStates(characters)) {
             return StringResources.Outro.GAME_OVER_WIN;
         } else {
@@ -177,7 +187,6 @@ public class GamePlan implements Observable {
     public void characterKilled() {
         // Notify observers that a character has been killed
         notifyObservers(GameChange.CHARACTER_KILL);
-        System.out.println("nigggagagagagagaggaggagagagag");
         // Additional logic can be added here if needed, e.g., updating game state or UI
     }
 

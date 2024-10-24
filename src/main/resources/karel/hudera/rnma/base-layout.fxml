@@ -8,14 +8,16 @@
 <?import javafx.scene.layout.VBox?>
 <BorderPane xmlns="http://javafx.com/javafx/23"
             fx:controller="karel.hudera.rnma.presentation.controllers.base.BaseLayoutController"
-            xmlns:fx="http://javafx.com/fxml/1">
+            xmlns:fx="http://javafx.com/fxml/1"
+            prefWidth="1920"
+            prefHeight="1080">
     <top>
         <VBox>
-            <ListView onMouseClicked="#onCharacterClicked" fx:id="charactersList" />
+            <ListView onMouseClicked="#onCharacterClicked" fx:id="charactersList" orientation="HORIZONTAL"/>
             <!-- Use HBox to divide the TextArea and Button 50/50 -->
-            <HBox >
+            <HBox>
                 <!-- TextArea with a fixed width of 50 -->
-                <TextArea fx:id="conversationTextArea" HBox.hgrow="ALWAYS"/>
+                <TextArea fx:id="conversationTextArea" HBox.hgrow="ALWAYS" style="-fx-font-size: 16px;"/>
                 <!-- Button will take up the remaining space -->
                 <VBox>
                     <Button fx:id="handleOpenShields" text="Open Shields" onAction="#handleOpenShields"/>

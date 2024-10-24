@@ -100,7 +100,6 @@ public class Game implements IGame {
      */
     @Override
     public boolean gameOver() {
-        notifyObservers(GameChange.GAME_OVER);
         return gameOver;
     }
 
@@ -122,16 +121,5 @@ public class Game implements IGame {
     @Override
     public GamePlan getGamePlan() {
         return gamePlan;
-    }
-
-    @Override
-    public void observe(GameChange gameChange, Observer observer) {
-        observersList.get(gameChange).add(observer);
-    }
-
-    private void notifyObservers(GameChange change) {
-        for (Observer observer : observersList.get(change)) {
-            observer.update();
-        }
     }
 }

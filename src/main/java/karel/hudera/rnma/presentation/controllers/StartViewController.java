@@ -32,7 +32,7 @@ public class StartViewController implements BaseControllerAware {
         backgroundImage.setImage(image);
 
         // Bind the ImageView's fitWidth and fitHeight properties to the StackPane size
-        backgroundImage.setFitHeight(screenHeight);
+        //backgroundImage.setFitHeight(screenHeight);
         backgroundImage.setFitWidth(screenWidth);
         //backgroundImage.fitWidthProperty().bind(rootPane.widthProperty());
         //backgroundImage.fitHeightProperty().bind(rootPane.heightProperty());
@@ -40,6 +40,6 @@ public class StartViewController implements BaseControllerAware {
 
     @FXML
     public void onStartGameButtonClick() {
-        navigator.navigateTo("kitchen");
-    }
+        navigator.changeScene("mainScene"); // To switch to the main scene
+            }
 }

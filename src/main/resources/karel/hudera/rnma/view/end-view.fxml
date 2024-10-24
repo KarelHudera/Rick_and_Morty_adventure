@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 <StackPane xmlns="http://javafx.com/javafx/23"
-           fx:controller="karel.hudera.rnma.presentation.controllers.StartViewController"
+           fx:controller="karel.hudera.rnma.presentation.controllers.EndViewController"
            xmlns:fx="http://javafx.com/fxml/1"
            fx:id="rootPane"
            prefWidth="1920"
            prefHeight="1080">
 
-    <!-- Background Image -->
-    <ImageView fx:id="backgroundImage" preserveRatio="true"/>
-
-    <!-- VBox with centered button -->
     <VBox alignment="CENTER" spacing="20.0" StackPane.alignment="CENTER">
-        <Button text="Start" onAction="#onStartGameButtonClick"
-                style="-fx-font-size: 24; -fx-padding: 10;"/>
+        <!-- Large text label -->
+        <Label fx:id="largeTextLabel" text="You should not see this" style="-fx-font-size: 64px;" />
     </VBox>
 </StackPane>
