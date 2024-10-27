@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="karel.hudera.rnma.presentation.controllers.LivingRoomViewController">
+
+    <!-- Container for navigation buttons -->
+    <HBox spacing="20.0">
+        <!-- Button to navigate to the Dining Room -->
+        <Button text="Go to Dining Room" onAction="#onDiningRoomButtonClick"/>
+        <!-- Button to navigate to the Kitchen -->
+        <Button text="Go to Kitchen" onAction="#onKitchenButtonClick"/>
+    </HBox>
+</HBox>

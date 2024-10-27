@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane xmlns="http://javafx.com/javafx/23"
+           fx:controller="karel.hudera.rnma.presentation.controllers.EndViewController"
+           xmlns:fx="http://javafx.com/fxml/1"
+           prefWidth="1920"
+           prefHeight="1080">
+
+    <!-- VBox to center the content vertically and horizontally -->
+    <VBox alignment="CENTER" spacing="20.0" StackPane.alignment="CENTER">
+        <!-- Large text label for end game message -->
+        <Label fx:id="largeTextLabel" text="You should not see this" style="-fx-font-size: 64px;"/>
+
+        <!-- Buttons for starting a new game or exiting the application -->
+        <Button fx:id="newGameButton" text="New Game" style="-fx-font-size: 24px;" />
+        <Button fx:id="finalExitButton" text="Exit" style="-fx-font-size: 24px;" />
+    </VBox>
+</StackPane>

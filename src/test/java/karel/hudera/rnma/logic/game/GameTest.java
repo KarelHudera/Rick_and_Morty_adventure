@@ -1,5 +1,6 @@
 package karel.hudera.rnma.logic.game;
 
+import karel.hudera.rnma.logic.mechanic.game.Game;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

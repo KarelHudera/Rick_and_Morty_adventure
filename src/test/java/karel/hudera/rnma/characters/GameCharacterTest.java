@@ -1,5 +1,6 @@
 package karel.hudera.rnma.characters;
 
+import karel.hudera.rnma.logic.characters.GameCharacter;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

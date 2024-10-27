@@ -1,6 +1,7 @@
 package karel.hudera.rnma.player;
 
-import karel.hudera.rnma.items.Item;
+import karel.hudera.rnma.logic.items.Item;
+import karel.hudera.rnma.logic.player.Inventory;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

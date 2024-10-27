@@ -1,0 +1,92 @@
+/* Center the HBox and add padding around it */
+HBox {
+    -fx-alignment: center;
+    -fx-padding: 20px;
+    -fx-spacing: 15px;
+}
+
+/* General styling for VBox containers */
+VBox {
+    -fx-padding: 15px;
+    -fx-spacing: 10px;
+    -fx-alignment: center;
+}
+
+/* Style for ListView (charactersList) */
+ListView {
+    -fx-background-color: #ffffff; /* White background for readability */
+    -fx-border-color: #d3d3d3; /* Light border */
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-font-size: 16px;
+}
+
+ListView .list-cell {
+    -fx-background-color: #f9f9f9;
+    -fx-text-fill: #333333;
+    -fx-font-size: 16px;
+}
+ListView .list-cell:hover {
+    -fx-background-color: #e8f5e9; /* Slight green tint on hover */
+}
+ListView .list-cell:selected {
+    -fx-background-color: #66BB6A; /* Match button color */
+    -fx-text-fill: white;
+    -fx-font-size: 20px; /* Ensures font size remains larger when selected */
+}
+
+/* Styling for TextArea (conversationTextArea) */
+TextArea {
+    -fx-background-color: #f7f7f7;
+    -fx-border-color: #d3d3d3;
+    -fx-border-radius: 5px;
+    -fx-font-size: 16px;
+    -fx-font-family: Arial, sans-serif;
+    -fx-text-fill: #333333;
+}
+
+/* Style for buttons */
+Button {
+    -fx-font-size: 16px;
+    -fx-padding: 10px 20px;
+    -fx-background-color: #4CAF50; /* Primary color */
+    -fx-text-fill: white;
+    -fx-background-radius: 8px; /* Rounded corners */
+    -fx-border-radius: 8px;
+    -fx-border-color: #388E3C;
+    -fx-border-width: 2px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0, 2, 2);
+}
+
+Button:hover {
+    -fx-background-color: #66BB6A; /* Lighter shade on hover */
+}
+
+Button:pressed {
+    -fx-background-color: #388E3C; /* Darker shade when pressed */
+}
+
+Button:focused {
+    -fx-border-color: #81C784;
+}
+
+/* Style specifically for the Open Shields and Kill buttons */
+/* Style specifically for the Open Shields and Kill buttons */
+#handleOpenShields, #killButton {
+    -fx-background-color: #D32F2F; /* Distinctive red for action buttons */
+    -fx-text-fill: white; /* White text for action buttons */
+    -fx-border-color: #B71C1C; /* Darker red border */
+}
+
+#handleOpenShields:hover, #killButton:hover {
+    -fx-background-color: #E57373; /* Lighter red on hover */
+}
+
+#handleOpenShields:pressed, #killButton:pressed {
+    -fx-background-color: #B71C1C; /* Darker red when pressed */
+}
+
+/* Styling for BorderPane layout */
+BorderPane {
+    -fx-background-color: #FAFAFA; /* Soft background color */
+}
