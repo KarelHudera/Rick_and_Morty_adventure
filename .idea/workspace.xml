@@ -5,11 +5,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="008460ec-3b7d-4420-abcf-7a0dc158c0eb" name="Changes" comment="feat: styling + comments">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/styles/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/RnM-house.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/media/RnM-house.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/MainApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/characters/GameCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/characters/GameCharacter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/characters/IGameCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/characters/IGameCharacter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/characters/Rick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/characters/Rick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/items/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/items/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/mechanic/InputHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/mechanic/InputHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/mechanic/commands/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/mechanic/commands/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/mechanic/commands/CommandDrop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/mechanic/commands/CommandDrop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/mechanic/commands/CommandEndGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/mechanic/commands/CommandEndGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/mechanic/commands/CommandGoTo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/mechanic/commands/CommandGoTo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/mechanic/commands/CommandHelp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/mechanic/commands/CommandHelp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/mechanic/commands/CommandKill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/mechanic/commands/CommandKill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/mechanic/commands/CommandOpen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/mechanic/commands/CommandOpen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/mechanic/commands/CommandPick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/mechanic/commands/CommandPick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/mechanic/commands/CommandSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/mechanic/commands/CommandSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/mechanic/commands/CommandShowInventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/mechanic/commands/CommandShowInventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/mechanic/commands/CommandTalkTo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/mechanic/commands/CommandTalkTo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/mechanic/commands/CommandsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/mechanic/commands/CommandsList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/mechanic/commands/ICommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/mechanic/commands/ICommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/mechanic/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/mechanic/game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/mechanic/game/GamePlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/mechanic/game/GamePlan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/mechanic/game/IGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/mechanic/game/IGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/player/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/player/Inventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/rooms/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/rooms/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/strings/StringResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/logic/strings/StringResources.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/BaseView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/BaseView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/controllers/DiningRoomViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/controllers/DiningRoomViewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/controllers/EndViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/controllers/EndViewController.java" afterDir="false" />
@@ -24,42 +60,44 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/observer/GameChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/observer/GameChange.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/observer/Observable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/observer/Observable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/observer/Observer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/karel/hudera/rnma/presentation/observer/Observer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/base-layout.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/base-layout.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/media/4k-rick-and-morty.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/media/4k-rick-and-morty.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/media/characters/Beauregard.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/media/characters/Beauregard.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/media/characters/Beth.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/media/characters/Beth.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/media/characters/Frankenstein.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/media/characters/Frankenstein.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/media/characters/Jerry.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/media/characters/Jerry.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/media/characters/Nicky.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/media/characters/Nicky.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/media/characters/Pensylvester.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/media/characters/Pensylvester.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/media/characters/Photoraptor.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/media/characters/Photoraptor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/media/characters/Poopybutthole.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/media/characters/Poopybutthole.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/media/characters/Refridgerator.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/media/characters/Refridgerator.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/media/characters/Rick.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/media/characters/Rick.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/media/characters/Steve.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/media/characters/Steve.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/media/characters/Summer.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/media/characters/Summer.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/styles/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/view/dining-room-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/view/dining-room-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/view/end-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/view/end-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/view/garage-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/view/garage-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/view/kitchen-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/view/kitchen-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/view/living-room-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/view/living-room-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/view/start-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma/view/start-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/karel/hudera/rnma/characters/GameCharacterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/karel/hudera/rnma/characters/GameCharacterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/karel/hudera/rnma/items/ItemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/karel/hudera/rnma/items/ItemTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/karel/hudera/rnma/logic/commands/CommandGoToTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/karel/hudera/rnma/logic/commands/CommandGoToTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/karel/hudera/rnma/logic/commands/CommandTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/karel/hudera/rnma/logic/commands/CommandTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/karel/hudera/rnma/logic/game/GamePlanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/karel/hudera/rnma/logic/game/GamePlanTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/karel/hudera/rnma/logic/game/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/karel/hudera/rnma/logic/game/GameTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/karel/hudera/rnma/player/InventoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/karel/hudera/rnma/player/InventoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/karel/hudera/rnma/presentation/InputHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/karel/hudera/rnma/presentation/InputHandlerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/karel/hudera/rnma/rooms/RoomTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/karel/hudera/rnma/rooms/RoomTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="FxmlFile" />
-        <option value="CSS File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <favorite-branches>
-      <branch-storage>
-        <map>
-          <entry type="REMOTE">
-            <value>
-              <list>
-                <branch-info repo="$PROJECT_DIR$" source="origin/develop" />
-              </list>
-            </value>
-          </entry>
-        </map>
-      </branch-storage>
-    </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="main" />
@@ -67,75 +105,46 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "KarelHudera"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/KarelHudera/Rick_and_Morty_adventure.git&quot;,
+    &quot;accountId&quot;: &quot;6d5ea836-6d4f-4985-99e3-c7a2971528cb&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/KarelHudera/Rick_and_Morty_adventure.git",
-    "accountId": "6d5ea836-6d4f-4985-99e3-c7a2971528cb"
-  }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 5
-}]]></component>
-  <component name="ProjectId" id="2nu1YGp9F8oa7fXZuJWhM2hgTm9" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
+}</component>
+  <component name="MavenRunner">
+    <option name="environmentProperties">
+      <map>
+        <entry key="PATH" value="/app/bin:/Library/Java/JavaVirtualMachines/jdk-23.jdk/Contents/Home/bin/java" />
+      </map>
+    </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Application.MainApplication.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Maven.Rick_and_Morty_adventure [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
+    "Maven.Rick_and_Morty_adventure [org.openjfx:javafx-maven-plugin:0.0.8:jlink].executor": "Run",
+    "Maven.Rick_and_Morty_adventure [org.openjfx:javafx-maven-plugin:0.0.8:run].executor": "Run",
     "git-widget-placeholder": "develop",
-    "kotlin-language-version-configured": "true",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+    "settings.editor.selected.configurable": "reference.settings.project.maven.runner"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/karel/hudera/rnma" />
-    </key>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
-      </set>
-    </attachedChunks>
-  </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="008460ec-3b7d-4420-abcf-7a0dc158c0eb" name="Changes" comment="" />
-      <created>1729808193209</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1729808193209</updated>
-      <workItem from="1729808195527" duration="14237000" />
-    </task>
     <servers />
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: styling + comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: styling + comments" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

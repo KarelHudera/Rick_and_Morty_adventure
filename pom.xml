@@ -6,10 +6,12 @@
 
   <groupId>karel.hudera.rnma</groupId>
   <artifactId>Rick_and_Morty_adventure</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.0</version>
   <name>Rick_and_Morty_adventure</name>
 
   <properties>
+    <maven.compiler.source>23</maven.compiler.source>
+    <maven.compiler.target>23</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 <junit.version>5.10.0</junit.version>  </properties>
 
@@ -58,14 +60,13 @@
             <!-- Default configuration for running with: mvn clean javafx:run -->
             <id>default-cli</id>
             <configuration>
-              <mainClass>karel.hudera.rnma./karel.hudera.rnma.MainApplication</mainClass>
-              <launcher>app</launcher>
-              <jlinkZipName>app</jlinkZipName>
-              <jlinkImageName>app</jlinkImageName>
+              <mainClass>karel.hudera.rnma.MainApplication</mainClass>
+              <launcher>${artifactId}</launcher>
+              <jlinkZipName>${artifactId}-${project.version}</jlinkZipName>
+              <jlinkImageName>${artifactId}</jlinkImageName>
               <noManPages>true</noManPages>
               <stripDebug>true</stripDebug>
               <noHeaderFiles>true</noHeaderFiles>
-              <executable>/Library/Java/JavaVirtualMachines/jdk-23.jdk/Contents/Home</executable>
             </configuration>
           </execution>
         </executions>
